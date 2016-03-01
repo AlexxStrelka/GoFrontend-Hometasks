@@ -1,0 +1,38 @@
+body {
+    marin: 0;
+    paddingL: 0;
+}
+
+.container {
+    background-color: lightyellow;
+    height: 1440px;
+    width: 798px;
+    border: solid 1px white;
+    margin: auto;
+    font-size: 16px;
+    }
+div {
+    width: 650px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+    text-align: left;
+    margin: auto;
+    line-height: 1.5em;
+    border-bottom: 1px solid black;
+}
+ img {
+     height: 280px;
+ }
+
+.header {
+    width: 650px;
+    padding-left: 20px;
+    border-bottom: none;
+    text-align: center;
+    margin: auto;
+}
+ .footer {
+     border-bottom: none;
+ }
