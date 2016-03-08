@@ -1,0 +1,186 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+body {
+	background-image: url(img/bground.png);
+    background-repeat: repeat-x;
+    height: 1020px;
+    font-family: Tahoma;
+}
+.container {
+    height: 990px;
+    width: 1000px;
+    margin: 0px auto 0px auto;
+    background-color: white;
+    -webkit-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.75);
+}
+
+.header {
+    height: 176px;
+    border-bottom: solid 1px #128aa7;
+}
+
+img.logo {
+    padding-left: 15px;
+    float: left;
+    padding-top: 10px;
+}
+p.contacts {
+    font-size: 12px;
+    color: #128aa7;
+    font-family: Tahoma;
+    padding-top: 10px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.country {
+    padding-top: 45px;
+    padding-right: 33px;
+    text-align: right;
+}
+
+div.refs {
+    padding-left: 690px;
+}
+a.refs {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+    color: #128aa7;
+    font-family: Tahoma;
+}
+
+.mainphoto {
+    border-bottom: solid 1px #128aa7;
+}
+.mainmenu {
+    width: 1000px;
+    height: 37px;
+    background-color: #343434;
+    border-bottom: solid 1px black;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    padding-top: 0px;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Tahoma;
+    font-size: 14px;
+    color: white;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: #343434;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border-top: 1px solid black;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+ul.submenu > li:hover > ul.submenu {
+    display: block;
+}
+
+.content {
+    width: 990px;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.leftColumn {
+    width: 25%;
+    float: left;
+    background: #edeef0;
+    color: #424c43;
+    font-size: 14px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+
+.centerColumn {
+    width: 45%;
+    float: left;
+    background: white;
+    color: #424c43;
+    font-size: 14px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+
+}
+
+.rightColumn {
+    width: 25%;
+    float: left;
+    background: #edeef0;
+    color: #424c43;
+    font-size: 14px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+
+h1 {
+    font-size: 18px;
+    color: #424c43;
+	text-align: center;
+}
+
+.copy {
+text-align: center;
+padding-top: 5px;
+color: white;
+font-family: Tahoma;
+font-size: 12px;
+}
