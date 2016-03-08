@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+@font-face {
+    font-family: OpenSans; /* Гарнитура шрифта */
+    src: url(fonts/open-sans.ttf); /* Путь к файлу со шрифтом */
+}
+
+.container {
+    height: 950px;
+    width: 1060px;
+    margin: 0px auto 0px auto;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 3px 4px rgba(231,231,231,1);
+    -moz-box-shadow: 0px 0px 3px 4px rgba(231,231,231,1);
+    box-shadow: 0px 0px 3px 4px rgba(231,231,231,1);
+    }
+.header {
+    height: 207px;
+    }
+
+.logo {
+    margin-top: 51px;
+    margin-left: 47px;
+}
+
+.menu {
+    background-color: #525151;
+    margin-left: 47px;
+    margin-top:40px;
+    width: 965px;
+    padding: 5px;
+    }
+
+
+a.menu1 {
+     text-decoration: none;
+     padding: 5px 40px 5px 25px;
+     font-size: 14px;
+     color: white;
+     font-family: OpenSans;
+ }
+
+a.menu1:hover {
+    background-color: #343434;
+    border-right: solid 1px #c8c8c8;
+    border-right: solid 1px #c8c8c8;
+}
+
+.sidebar {
+    /*border: solid 1px #c8c8c8;*/
+    width: 240px;
+    height: 240px;
+    margin-left: 47px;
+    float: left;
+}
+a.menu2 {
+    text-decoration: none;
+    padding: 10px 10px 10px 25px;
+    border: solid 1px #c8c8c8;
+    border-bottom: solid 0.5px #c8c8c8;
+    font-size: 13px;
+    color: #656363;
+    font-family: OpenSans;
+    display: block;
+    }
+
+a.menu2:hover {
+    color: black;
+    background-color: #f9f9f9;
+}
+
+.content {
+    /*border: solid 1px black;*/
+    width: 677px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+img.bacycle {
+    width: 677px;
+    border: solid 1px #c8c8c8;
+}
+
+p {
+    font-size: 13px;
+    color: #2c2c2c;
+    font-family: OpenSans;
+    padding: 15px;
+}
+
+.footer {
+    clear: both;
+    background-color: #e1e1e1;
+    height: 40px;
+    width: 965px;
+    margin-left: 47px;
+    }
+
+a.footer1 {
+    text-decoration: none;
+    padding: 15px 40px 15px 15px;
+    font-size: 13px;
+    color: #2c2c2c;
+    font-family: OpenSans;
+    text-align: center;
+    }
+
+a.footer1:hover {
+    text-decoration: underline;
+}
+span {
+    margin-left: 310px;
+    font-size: 13px;
+    color: #2c2c2c;
+    font-family: OpenSans;
+
+}
