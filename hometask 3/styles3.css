@@ -73,6 +73,7 @@ a.menu2 {
 a.menu2:hover {
     color: black;
     background-color: #f9f9f9;
+	padding-left: 35px;
 }
 
 .content {
