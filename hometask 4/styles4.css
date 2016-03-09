@@ -85,18 +85,20 @@ ul.menu > li {
 }
 ul.menu > li > a {
     display: block;
-    padding: 10px;
+    padding: 10px 25px 10px 35px;
     color: white;
     background-color: #343434;
     text-decoration: none;
-}
+    }
+
+
 ul.menu > li > a:hover {
-    background-color: #343434;
+    background-color: #2a2a2a;
 }
 ul.submenu {
     display: none;
     position: absolute;
-    width: 120px;
+    width: 150px;
     top: 37px;
     left: 0;
     background-color: white;
@@ -130,45 +132,44 @@ ul.submenu > li:hover > ul.submenu {
 }
 
 .content {
-    width: 990px;
-    overflow: hidden;
+    width: 1000px;
+    /*overflow: hidden;*/
     padding-top: 5px;
 }
 .leftColumn {
-    width: 25%;
+    width: 250px;
     float: left;
     background: #edeef0;
     color: #424c43;
     font-size: 14px;
-    padding-bottom: 20000px;
-    margin-bottom: -20000px;
-	padding-left: 5px;
-	padding-right: 5px;
+    height: 529px;
+	/*padding-left: 5px;*/
+	/*padding-right: 5px;*/
+    border-left: solid 1px #c7cacf;
+    border-right: solid 1px #c7cacf;
 
 }
 
 .centerColumn {
-    width: 45%;
+    width: 490px;
     float: left;
     background: white;
     color: #424c43;
     font-size: 14px;
-    padding-bottom: 20000px;
-    margin-bottom: -20000px;
-
+    height: 529px;
 }
 
 .rightColumn {
-    width: 25%;
-    float: left;
+    width: 250px;
+    float: right;
     background: #edeef0;
     color: #424c43;
     font-size: 14px;
-    padding-bottom: 20000px;
-    margin-bottom: -20000px;
-	padding-left: 5px;
-	padding-right: 5px;
-
+    height: 529px;
+    /*padding-left: 5px;*/
+	/*padding-right: 5px;*/
+    border-left: solid 1px #c7cacf;
+    border-right: solid 1px #c7cacf;
 }
 
 h1 {
@@ -177,9 +178,13 @@ h1 {
 	text-align: center;
 }
 
+p.column {
+    padding: 5px;
+}
+
 .copy {
 text-align: center;
-padding-top: 5px;
+padding-top: 15px;
 color: white;
 font-family: Tahoma;
 font-size: 12px;
