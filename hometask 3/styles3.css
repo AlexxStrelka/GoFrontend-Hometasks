@@ -34,22 +34,26 @@ body {
     margin-left: 47px;
     margin-top:40px;
     width: 965px;
-    padding: 5px;
+    /*padding: 5px;*/
+    height: 40px;
+    line-height: 40px;
     }
 
 
 a.menu1 {
      text-decoration: none;
-     padding: 5px 40px 5px 25px;
+     padding: 10px 35px 10px 25px;
      font-size: 14px;
      color: white;
      font-family: OpenSans;
+    border-right: solid 1px #525151;
+    border-left: solid 1px #525151;
  }
 
 a.menu1:hover {
     background-color: #343434;
     border-right: solid 1px #c8c8c8;
-    border-right: solid 1px #c8c8c8;
+    border-left: solid 1px #c8c8c8;
 }
 
 .sidebar {
@@ -101,15 +105,18 @@ p {
     height: 40px;
     width: 965px;
     margin-left: 47px;
+    vertical-align: middle;
     }
 
 a.footer1 {
     text-decoration: none;
-    padding: 15px 40px 15px 15px;
+    padding: 35px 40px 45px 25px;
     font-size: 13px;
     color: #2c2c2c;
     font-family: OpenSans;
     text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
     }
 
 a.footer1:hover {
