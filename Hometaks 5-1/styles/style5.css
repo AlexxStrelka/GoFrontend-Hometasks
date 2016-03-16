@@ -1,0 +1,228 @@
+* {
+	padding: 0;
+	margin: 0;
+} 
+
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('fonts/helveticaneuecyr-medium-webfont.eot');
+    src: url('fonts/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+			font-family: "Helvetica Neue Regular", Arial, sans-serif;
+}
+.container {
+	height: 1062px;
+	width: 1214px;
+	margin: auto;
+	-webkit-box-shadow: 0px 0px 4px 2px rgba(153,153,153,1);
+	-moz-box-shadow: 0px 0px 4px 2px rgba(153,153,153,1);
+	box-shadow: 0px 0px 4px 2px rgba(153,153,153,1);
+} 
+
+.header {
+	/*background-color: #085392;*/
+	background-image: url(../img/menuBackground.png); /*Фон синей менюшки*/
+	height: 37px;
+	width: 100%;
+	}
+
+.bg-image {
+	height: 814px;
+	background: url("../img/bg_img.jpg");
+	padding-top: 211px;
+}
+a.left {
+	text-decoration: none;
+	color: #60b5ed;
+	padding: 15px 15px 0px 15px;
+	line-height: 5px;
+	margin-bottom: 5px;
+	/*height: 22px;*/
+	display: inline-block;
+}
+
+a.left:hover {
+	background-color: #4eabda; /*Наведение на ссылки Meu YouBike, Vender, Forum Вылазит за границы?????????????????*/
+	color: white;
+	padding-top: -30px;
+	height: 22px;
+	}
+
+.right {
+	text-decoration: underline; 
+	color: white;
+	text-align: right;
+	line-height: 35px;
+	padding-left: 5px;
+}
+
+div.header-right {
+	height: 35px;
+	width: 191px;
+	background: linear-gradient(to bottom, #50afdc, #2e7ac4);
+	background:-moz-linear-gradient (#50afdc, #2e7ac4);
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#50afdc), to(#2e7ac4));
+	border: solid 1px #4a9cd6;
+	float: right;
+	margin-right: 20px;
+	color: white;
+	font-size: 14px;
+	/*border: solid 1px red;*/
+}
+
+span.left {
+	font-size: 14px;
+	color: white;
+	padding: 10px 5px 5px 15px;
+	/*line-height: 5px;*/
+	/*margin-bottom: 5px;*/
+	float: left;
+
+}
+
+div.header-left {
+	width: 830px;
+	float: left;
+	display: inline;
+	text-align: right;
+	font-size: 14px;
+	height: 37px;
+	/*padding-top: 10px;*/
+	/*border: solid 1px green;*/
+}
+
+div.header-image {
+	float: left;
+}
+img.line {
+	padding: 2px 5px 0px 1px;
+	/*border: solid 1px red;*/
+}
+
+img.flag {
+	padding: 0px 1px 0px 1px;
+}
+
+.Regform {
+	background-color: rgba(55, 61, 50, 0.7);
+	width: 560px;
+	height: 610px;
+	margin: auto;
+	/*margin-top: 211px;*/
+}
+
+span.upper-form {
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	border-bottom: solid 2px #bfc7b8;
+	display: block;
+	height: 62px;
+	line-height: 62px;
+}
+
+.mainform {
+	display: block;
+}
+.FB {
+	padding: 30px 0px 5px 70px; /*Кнопка Фейсбук*/
+	display: block;
+
+}
+
+/*.OU {
+	padding: 55px 0px 5px 75px;
+}*/
+
+.lineOU {
+color: #999999;
+/*border: solid 1px white;
+*/padding: 30px 0px 5px 75px; /*Линии с OU*/
+font-size: 14px;
+}
+
+.lineOU:before {
+ display: inline-block;
+ width: 120px;
+ margin: 0 5px 3px 0;
+ content: "";
+ border-top: 1px solid #666666;
+ border-bottom: 1px solid #000; 
+}
+
+.lineOU:after {
+ display: inline-block;
+ width: 120px;
+ margin: 0 0 3px 5px;
+ content: "";
+ border-top: 1px solid #666666;
+ border-bottom: 1px solid #000; 
+}
+.FormField {
+	display: block;
+	padding: 10px 20px 10px 18px; /*Черные поля формы*/
+	margin: 10px 0px 0px 152px;
+	background-color: #100f0f;
+	border-top: none;
+	border-right: none;
+	border-left: none;                      /*Не видно серую границу внизу блока,,,??????????*/
+	border-bottom: #474747;                   /*В хроме при постановке курсора появляется оранжевая рамочка!!!!*/
+	color: #cccccc;
+	width: 240px;
+}
+
+
+.FormField:focus {
+	   
+	background-color: #1b5286;
+	-webkit-box-shadow: 0px 0px 12px 3px rgba(74,133,173,1);
+	-moz-box-shadow: 0px 0px 12px 3px rgba(74,133,173,1);
+	box-shadow: 0px 0px 12px 3px rgba(74,133,173,1);
+	border: none;
+}
+
+
+.FormChek {
+	padding: 10px 20px 10px 18px; /*Checkbox*/
+	margin: 10px 0px 0px 152px;
+}
+
+.forCheck {
+	color: #cccccc;
+	font-size: 14px;  /*Текст возле checkbox*/
+}
+
+.SubmitButton {
+	display: block;
+	/*background-color: -moz-linear-gradient (#2e7ac4, #67c6e6);
+	background-color:-webkit-gradient(linear, 0 0, 0 100%, from(#2e7ac4), to(#67c6e6));*/
+	background-image: url(../img/AccountButton.png);
+	color: white;
+	font-size: 14px;
+	height: 36px;
+	width: 150px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #3889cb;
+    z-index: 2;
+    padding: 2px 5px 5px 5px;
+    margin-left: 212px;
+    margin-top: 24px;
+    
+}
+
+p.bottomwords {
+	color: white;
+	font-size: 11px;
+	text-align: center;
+	margin-top: 20px;
+	/*margin-left: 122px;*/
+}
