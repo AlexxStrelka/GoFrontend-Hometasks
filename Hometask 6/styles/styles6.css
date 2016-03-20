@@ -1,0 +1,424 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'Lucida Sans Unicoce';
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.eot');
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.woff') format('woff'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-family: "Lucida Sans Unicoce", Arial, sans-serif;
+}
+
+.container {
+	width: 1000px;
+	height: 1307px;
+	background-color: white;
+	margin: auto;
+	text-align: center;
+	/*border: solid 1px red;*/
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(174,174,174,1);
+	-moz-box-shadow: 0px 0px 3px 1px rgba(174,174,174,1);
+	box-shadow: 0px 0px 3px 1px rgba(174,174,174,1);
+}
+
+.upperHeader {
+	height: 52px; /*Upper part with phone numbers etc*/
+}
+.phones {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: #5e696d;
+	text-align: left;
+	display: inline-block;
+	float: left;
+	margin: 21px 0px 0px 52px;
+	padding-bottom: 5px;
+
+
+}
+div.phoneIcon {
+	display: inline-block; 
+	margin: 2px 0px 0px 0px;
+	
+}
+.RegForm {
+	display: inline-block;    /*Фон регистрационной формы*/
+	float: left;
+	width: 493px;
+	height: 26px;
+	border: solid 1px black;
+	background: linear-gradient(to top, #0c3357 0%, #0c3357 36%, #1f6787 100%);
+	background:-moz-linear-gradient (#0c3357, #1f6787);
+	background:-webkit-gradient (linear, 0 0, 0 100%, from(#0c3357), to(#1f6787));
+	border-radius: 5px;
+	-webkit-box-shadow: 4px 4px 4px 0px rgba(192,192,192,1);
+	-moz-box-shadow: 4px 4px 4px 0px rgba(192,192,192,1);
+	box-shadow: 4px 4px 4px 0px rgba(192,192,192,1);
+	margin: 18px 0px 11px 15px;
+}
+.RegForm-field {
+	width: 113px;
+	height: 14px; /*Окно ввода логина и пароля*/
+}
+a.enter {
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+	/*border-right: solid 1px white; *//*Для белой ссылки "вход"*/
+}
+
+a.enter2 {
+	color: white;
+	text-decoration: none;
+	font-size: 11px; /*Для белой ссылки "регистрация"*/
+}
+a.passRenew {
+	color: #bfbfbf;               /*Для ссылки "забыли пароль?"*/
+	font-size: 12px;
+}
+img.login-pic {
+	padding: 5px 0px 0px 5px;    /*Фигурка человечка*/
+	float: left;
+}
+
+img.regline {
+	padding: 2px 0px 0px 0px;
+}
+.icons {
+	width: 76px;
+	border: solid 1px #bdc4c7;
+	border-radius: 15px;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(203,209,211,1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(203,209,211,1);
+	box-shadow: 2px 2px 5px 0px rgba(203,209,211,1);
+	display: inline-block;
+	margin: 19px 0px 14px -25px;
+
+}
+
+.MainMenu {
+	width: 910px;
+	height: 33px;
+	background: linear-gradient(to top, #020202 0%, #17191b 36%, #17191b 100%);
+	background:-moz-linear-gradient (#020202, 020202#17191b);
+	background:-webkit-gradient (linear, 0 0, 0 100%, from(#020202), to(#17191b));
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 3px 5px 0px rgba(87,88,97,1);
+	-moz-box-shadow: 2px 3px 5px 0px rgba(87,88,97,1);
+	box-shadow: 2px 3px 5px 0px rgba(87,88,97,1);
+	margin: auto;
+	text-align: left;
+}
+
+.MainMenu-left {
+	margin-left: 129px;   /*hhhhh112*/
+	padding-top: 3px;
+	width: 556px;
+	height: 30px;
+	float: left;
+}
+
+.MM {
+	font-size: 14px;
+	color: #b1bcc0;
+	text-decoration: none;
+	/*display: inline-block;*/
+	/*float: left;*/
+	/*text-align: left;
+	padding: ;*/
+	padding: 2px 11px;
+	}
+
+.MM:hover {
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+	background: linear-gradient(to top, #0c3357 0%, #13486b 36%, #1f6787 100%);
+	background:-moz-linear-gradient (#0c3357, #1f6787);
+	background:-webkit-gradient (linear, 0 0, 0 100%, from(#0c3357), to(#1f6787));
+	border-radius: 11px; 
+	/*display: inline-block;*/
+	/*float: left;*/
+	/*text-align: left;
+	padding: ;*/
+	padding: 2px 11px;
+}
+.busket {
+	/*display: inline-block;*/
+	float: left;
+	padding: 5px 0px 0px 0px;
+}
+span.white {
+	color: #929b9f;
+	font-family: Arial;
+	font-size: 11px;
+}
+span.blue {
+	color: #0d5a8f;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.Find {
+	padding-top: 10px;
+}
+
+
+
+ /*......................................................................*/
+.mainContent {                      /* Основная часть с товарами и ценами на сером фоне*/
+	width: 527px;
+	height: 627px;
+	float: left;
+	border-radius: 5px;
+	background: linear-gradient(to top, #93a7b0 0%, #a6b5bd 36%, #e5e7e8 100%);
+	background:-moz-linear-gradient (#93a7b0, #e5e7e8);
+	background:-webkit-gradient (linear, 0 0, 0 100%, from(#93a7b07), to(#e5e7e8));
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+
+figure {
+	display: inline-block;
+	float: left;
+	margin: 0px 0px 0px 23px;
+	padding: 17px 0px 22px 4px;
+}
+.tire {
+	height: 128px;
+	width: 138px;
+	/*display: block;
+	float: left;*/
+	margin: auto;
+	/*padding: 10px;*/
+	border: solid 1px #aeb7ba;
+	border-radius: 5px;
+	background-color: white;
+}
+
+figure div.price {
+	color: #114165;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Arial, sans-serif;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+figcaption {
+	color: #206988;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 15px;
+}
+figcaption p {
+	color: #1f2528;
+	font-size: 13px;
+}
+
+
+
+ /*...............................................................................*/
+
+.sidebar-left {
+	width: 183px;
+	/*border: solid 1px black;*/
+	float: left;
+	margin-left: 45px;
+}
+
+.sidebar-right {
+	width: 181px;
+	/*border: solid 1px black;*/
+	float: left;
+}
+
+ul.catalogue {
+/*list-style-image: url(../img/catalogue-icon.png);*/
+list-style-position: inside;
+text-align: left;
+vertical-align: middle;
+height: 26px;
+}
+
+ul.catalogue>li {
+	color: #114165;                      /*Иконка КАТАЛОГ ТОВАРОВ*/
+	font-size: 13px;
+	list-style-type: none;
+	height: 23px;
+	padding-top: 2px;
+	/*list-style-image: url(../img/catalogue-icon.png);*/
+	border: solid 1px #79878d;
+	border-radius: 11px;
+	-webkit-box-shadow: 5px 5px 4px -1px rgba(145,153,157,1);
+	-moz-box-shadow: 5px 5px 4px -1px rgba(145,153,157,1);
+	box-shadow: 5px 5px 4px -1px rgba(145,153,157,1);
+}
+ul.catalogue>li>span {
+	padding-left: 5px;
+}
+
+ul.catalogue>li>span:before {
+	content: url(../img/catalogue-icon.png);
+	display: block;
+	float: left;
+	
+}
+
+li.cat-item {
+	color: #114165;
+	font-size: 14px;                 /*Пункты левого меню - ШИНЫ, ДИСКИ.*/   
+	list-style-type: none;
+	width: 148px;
+	margin: 12px 0px -6px 6px;
+	/*list-style-image: url(../img/round-icon.png);*/
+	text-align: left;
+	border: solid 1px #79878d;
+	border-radius: 10px;
+}
+li.cat-item:before {
+	content: url(../img/round-icon.png);
+	display: block;
+	float: left;
+}
+li.cat-item>span {
+	height: 29px;
+	padding-left: 5px;
+}
+
+
+li.sub {
+	list-style-type: circle;
+	list-style-position: inside;
+	margin-top: 1px;
+	padding-left: 20px; 
+}
+li.sub>a {
+	text-decoration: none;
+	color: #0d365a;
+	font-size: 13px;
+	font-weight: bold;
+}
+li.sub>a:hover {
+	text-decoration: underline;
+	color: #0d365a;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;  
+}
+
+.brand {
+	color: #114165;                      /*Иконка BRANDS*/
+	font-size: 14px;
+	height: 25px;
+	width: 181px;
+	text-align: left;
+	vertical-align: middle;
+	padding: 0px 0px 0px 2px;
+	border: solid 1px #79878d;
+	border-radius: 11px;
+	-webkit-box-shadow: 5px 5px 4px -1px rgba(145,153,157,1);
+	-moz-box-shadow: 5px 5px 4px -1px rgba(145,153,157,1);
+	box-shadow: 5px 5px 4px -1px rgba(145,153,157,1);
+}
+.brands {
+	display: block;
+	height: 24px;
+	width: 134px;
+	text-align: left;
+	padding: 0px 0px 0px 2px;
+	margin: 12px 0px 0px 18px;
+	border: solid 1px #79878d;
+	border-radius: 11px;
+	color: #0c3256;
+	font-size: 14px;
+}
+
+p.brandCheck {
+	color: #465961;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 6px 0px 0px 30px;
+	/*margin-left: -35x;*/
+	text-align: left;
+}
+
+span.round1 {
+		float: left;
+		margin-left: 4px;
+}
+
+span.round2 {
+	margin-left: 5px;
+	float: left;
+}
+
+button {
+	width: 80px;
+	height: 25px;
+	background: linear-gradient(to top, #0c3357 0%, #124569 36%, #1f6585 100%);
+	background:-moz-linear-gradient (#0c3357, #e5e7e8);
+	background:-webkit-gradient (linear, 0 0, 0 100%, from(#0c3357), to(#1f6585)); 
+	border: none;
+	border-radius: 15px;
+	-webkit-box-shadow: 4px 4px 4px 1px rgba(191,193,194,1);
+	-moz-box-shadow: 4px 4px 4px 1px rgba(191,193,194,1);
+	box-shadow: 4px 4px 4px 1px rgba(191,193,194,1);
+	color: #bfc1c2;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	margin: 8px 0px 0px 31px;
+	display: block;
+}
+
+/*........................................................._sidebars*/
+
+.brand-logo {
+	height: 50px;
+	clear: both;
+	display: block;
+	width: 908px;
+	/*margin: auto;*/
+	/*margin-top: 15px;*/
+	padding-top: 35px;
+	padding-left: 41px;
+}
+
+footer {
+	height: 99px;
+	width: 908px;
+	background-color: #213a4d;
+	margin-left: 44px;
+}
+footer>a {
+	color: #bec6c9;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	display: inline-block;
+	padding: 14px 6px 0px 0px;
+	text-align: center;
+}
+footer>a:hover {
+	color: #52abcb;
+}
+
+
+cite {
+	color: #7f4740;
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	display: block;
+	padding: 10px 0px 0px 0px;
+}
