@@ -10,10 +10,10 @@
 	<header>
 		<div class="upperHeader"> 
 			<div class="phones">
-				<div class="phoneIcon"> 
+				<div class="phones__icon"> 
 					<img src="img/phone2.png"> 
 				</div>
-				<span>(044)123-45-67 &nbsp; (044)567-89-10 </span>
+				<span class="phones__number">(044)123-45-67 &nbsp; (044)567-89-10 </span>
 			</div>
 				<div class="RegForm"> 
 					<form action="#" method="POST">
@@ -27,12 +27,15 @@
 					</form>
 				</div>
 				<div class="icons">
-					<img src="img/icon1.png">
-					<img src="img/icon2.png">
-					<img src="img/icon3.png">
+					<a href="#"><img src="img/icon1.png"></a>
+					<a href="#"><img src="img/icon2.png"></a>
+					<a href="#"><img src="img/icon3.png"></a>
 				</div>
 			</div>
-			<img class="MainPic" src="img/header.png">
+			<div class="MainPic">	
+				<!-- <img src="img/header.png"> -->
+				<a class="logo-link" href="#"><img src="img/logo-link.png"></a>
+			</div>
 	</header>
 	<nav class="MainMenu">
 		<div class="MainMenu-left">
@@ -51,8 +54,137 @@
 		</div>
 	</nav>
 	<div class="Find">
-		<img src="img/FindTire.png">
-	</div>
+		<!-- <img src="img/FindTire.png"> -->
+		<div class="Find__auto">
+			<p class="find2">Поиск по автомобилю</p>
+				<div class="Find__auto_left">
+					<p class="find1-left">Диски:</p>
+					<form action="#" name="FindAuto">
+						<div class="fblock"><span class="black">Марка <span class="grey">авто:</span></span></div>
+							<select class="form-sel">
+  							<option>Lanos</option>
+  							<option>Toyota</option>
+							</select><br>
+						<div class="fblock"><span class="black">Модель <span class="grey">автомобиля:</span></span></div>
+							<select class="form-sel">
+  							<option>KIA</option>
+  							<option>camaro</option>
+							</select>
+						<div class="fblock"><span class="black">Год выпуска <span class="grey">автомобиля:</span></span></div>
+							<select class="form-sel diff">
+  							<option>2001</option>
+  							<option>2002</option>
+							</select>
+						<div class="fblock"><span class="black">Комплектация:</span></div>
+							<select class="form-sel">
+  							<option>п/п</option>
+  							<option>н/п</option>
+							</select>
+					  </form>
+
+				</div>
+				<div class="Find__auto_right">
+					<p class="find1-right">Шины:</p>
+					<form action="#" name="FindAuto">
+						<div class="fblock"><span class="black">Марка <span class="grey">авто:</span></span></div>
+							<select class="form-sel">
+  							<option>Пункт 1</option>
+  							<option>Пункт 2</option>
+							</select><br>
+						<div class="fblock"><span class="black">Модель <span class="grey">автомобиля:</span></span></div>
+							<select class="form-sel">
+  							<option>Пункт 1</option>
+  							<option>Пункт 2</option>
+							</select><br>
+						<div class="fblock"><span class="black">Год выпуска <span class="grey">автомобиля:</span></span></div>
+							<select class="form-sel diff">
+  							<option>Пункт 1</option>
+  							<option>Пункт 2</option>
+							</select><br>
+						<div class="fblock"><span class="black">Комплектация:</span></div>
+							<select class="form-sel">
+  							<option>Пункт 1</option>
+  							<option>Пункт 2</option>
+							</select>
+					  </form>
+				</div>
+				<a class="find__auto-link" href="">поиск....</a>
+		</div>
+
+		<div class="Find__tire">
+			<p class="find2">поиск шин</p>
+			<form action="#" name="FindTire">
+				<div class="fblock"><span class="black">Размер:</span></div>
+							<select class="form-sel">
+  							<option>145</option>
+  							<option>150</option>
+							</select>
+							<span>/</span>
+							<select class="form-sel">
+  							<option>23</option>
+  							<option>22</option>
+							</select>
+
+						<div class="fblock"><span class="black right-align">R</span></div>
+							<select class="form-sel_short">
+  							<option>12</option>
+  							<option>15</option>
+							</select><br>
+				<div class="Find__tire_check">
+					<div class="fblock black">Сезон:</div>
+					<div class="Find__tire_check_box">
+					<p><input type="checkbox" name="leto" value="">лето</p>
+					<p><input type="checkbox" name="leto" value="">зима</p>
+					<p><input type="checkbox" name="leto" value="">всесез</p>
+				    </div>
+				</div>
+			</form>
+			<div class="clear"></div>
+			<a class="find__tire-link" href="">поиск....</a>
+		</div>
+		<div class="Find__disk">
+			<div class="Find__disk_border">
+				<p class="find2">поиск дисков</p>
+				<form action="#" name="FindDiks">
+					<div class="fblock"><span class="black">Диаметр <span class="grey">дисков:</span></span></div>
+							<select class="form-sel">
+	  						<option>14</option>
+	  						<option>13</option>
+							</select><br>
+					<div class="fblock"><span class="black">Количество <span class="grey">крепёжных
+						отверстий:</span></span></div>
+							<select class="form-sel">
+  							<option>3</option>
+  							<option>2</option>
+							</select><br>
+					<div class="fblock"><span class="black">Диаметр <span class="grey">расположения 
+						крепёжных отверстий:</span></span></div>
+							<div class="div-sel">
+							<select class="form-sel diff">
+  							<option>12</option>
+  							<option>11</option>
+							</select><br>
+							</div>
+				</form>
+			</div>
+				<div class="Find__disk_right">
+					<form action="#" name="FindDiks_right">
+						<div class="fblock"><span class="black">ДЦО <span class="grey">(диаметр центрального отверстия)</span></span></div>
+							<select class="form-sel-disk">
+	  						<option>12</option>
+	  						<option>13</option>
+							</select>
+						<div class="fblock"><span class="black">ET </span><span class="grey">(вылет диска)</span></div>
+							<select class="form-sel-disk">
+	  						<option>12</option>
+	  						<option>13</option>
+							</select>	
+					</form>
+				</div>
+				<a class="find__disk-link" href="">поиск....</a>
+			</div>
+		</div>
+
 	<div class="content">
 		<aside class="sidebar-left">
 			<ul class="catalogue">

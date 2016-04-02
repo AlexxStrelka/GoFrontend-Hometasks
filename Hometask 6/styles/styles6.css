@@ -22,7 +22,7 @@ body {
 	height: 1307px;
 	background-color: white;
 	margin: auto;
-	text-align: center;
+	/*text-align: center;*/
 	/*border: solid 1px red;*/
 	-webkit-box-shadow: 0px 0px 3px 1px rgba(174,174,174,1);
 	-moz-box-shadow: 0px 0px 3px 1px rgba(174,174,174,1);
@@ -31,6 +31,7 @@ body {
 
 .upperHeader {
 	height: 52px; /*Upper part with phone numbers etc*/
+	text-align: center;
 }
 .phones {
 	font-family: Arial, sans-serif;
@@ -44,10 +45,16 @@ body {
 
 
 }
-div.phoneIcon {
+div.phones__icon {
 	display: inline-block; 
 	margin: 2px 0px 0px 0px;
 	
+}
+
+.phones__number {
+	display: block;
+    float: right;
+    padding: 0 0 0 5px;
 }
 .RegForm {
 	display: inline-block;    /*Фон регистрационной формы*/
@@ -101,9 +108,319 @@ img.regline {
 	box-shadow: 2px 2px 5px 0px rgba(203,209,211,1);
 	display: inline-block;
 	margin: 19px 0px 14px -25px;
+	cursor: pointer;
 
 }
 
+
+.MainPic {
+	background-image: url(../img/header.png); 
+	height: 239px;
+	width: 908px;
+	background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.logo-link {
+	z-index: 2;
+	padding-top: 50px;
+	text-align: left;
+	height: 120px;
+	width: 265px;
+	display: block;
+}
+
+/*------------------------Find bar ------------------*/
+.Find {
+	height: 140px;
+	width: 910px;
+	/*border: solid black 1px;*/
+	margin: auto;
+	position: relative;
+	margin-top: 5px;
+	line-height: 15px;
+}
+ /*...................................Поиск по авто.....................*/
+.Find__auto {
+	width: 400px;
+	height: 120px;
+	border: solid 1px #c4c4c4;
+	border-radius: 15px;
+	text-align: center;
+	float: left;
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	padding: 5px 5px 5px 5px;
+	margin: 7px 5px 0 5px;
+}
+
+p.find1-right {
+	color: #154468;
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 8px;
+	padding-bottom: 5px;
+
+}
+p.find1-left {
+	color: #154468;
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+p.find2 {
+	color: #154468;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-top: -2px;
+
+}
+span.black {
+	color: black;
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+span.grey {
+	color: #77858b;
+	font-size: 8px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.Find__auto_left {
+	/*border: solid 1px red;*/
+	width: 190px;
+	float: left;
+	display: inline-block;
+	margin-top: -18px;
+	text-align: left;
+	padding-left: 10px;
+}
+.Find__auto_right {
+	/*border: solid 1px red;*/
+	width: 185px;
+	float: left;
+	display: inline-block;
+	margin-top: -18px;
+	text-align: left;
+	padding-left: 15px;
+}
+
+.fblock {
+	width: 75px;
+	/*border: solid 1px green;*/
+	line-height: 6px;
+	display: inline-block;
+	text-align: left;
+}
+
+.form-sel {
+	display: inline-block;
+	width: 101px;
+	margin: 1px 0 0 0px;
+	font-size: 11px;
+}
+
+.diff {
+	width: 60px;
+	position: left;
+}	
+
+.find__auto-link {
+	color: #154467;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	display: block;
+	text-align: right;
+	margin: 90px 15px 0 0;
+}
+
+
+/*...............................Поиск шины..............................*/
+.Find__tire {
+	width: 180px;
+	height: 124px;
+	border: solid 1px #c4c4c4;
+	border-radius: 15px;
+	float: left;
+	display: inline-block;
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	margin: 7px 5px 0 10px;
+	padding: 5px 5px 5px 5px;
+
+}
+p.Find__tire_check {
+	color: black;
+	font-size: 12px;
+	position: relative;
+
+}
+
+.Find__tire div.fblock {
+	width: 43px;
+	padding-top: 11px;
+	padding-left: 8px;
+	text-align: right;
+}
+
+.Find__tire select.form-sel {
+	width: 43px;
+}
+
+.Find__tire select.form-sel_short {
+	width: 43px;
+	margin: 7px 0 0 0px;
+	font-size: 11px;
+
+
+}
+
+div.black {
+	color: black;
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	/*height: 43px;*/
+	float: left;
+
+}
+.Find__tire_check_box {
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	font-family: "Lucida Sans Unicoce", sans-serif;
+	/*font-weight: bold;*/
+	padding: 5px 0 0 5px;
+    line-height: 1px;
+
+}
+
+.Find__tire .fblock span.right-align {
+	text-align: right;
+}
+
+.Find__tire .fblock-R {
+	width: 10px;
+	color: red;
+	line-height: 6px;
+	display: inline-block;
+	
+}
+
+.clear {
+	clear: both;
+
+}
+.find__tire-link {
+	color: #154467;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	display: block;
+	text-align: right;
+	margin: 0px 15px 0 110px;
+	width: 60px;
+	height: 15px;
+}
+
+/*..................................................Поиск по дискам.............................*/
+.Find__disk {
+	width: 250px;
+	height: 127px;
+	border: solid 1px #c4c4c4;
+	border-radius: 15px;
+	float: left;
+	display: inline-block;
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	box-shadow: 10px 10px 5px -6px rgba(166,166,167,1);
+	margin: 7px 5px 0 5px;
+	padding: 3px 5px 5px 12px;
+}
+
+.Find__disk_border {
+	border-right: solid 1px #bdc6ca;
+	width: 156px;
+	float: left;
+	position: relative;
+}
+
+.Find__disk_border .fblock {
+	float: left;
+	margin: 2px;
+    line-height: 8px;
+    padding-right: 12px;
+}
+.Find__disk select.form-sel {
+	width: 57px;
+	/*float: left;*/
+	margin: 2px 0 0 0px;
+}
+
+.Find__disk div.fblock {
+	width: 80px;
+}
+
+.Find__disk_right {
+	float: right;
+	padding: 5px 0 0 0;
+}
+
+
+.Find__disk_right span.black {
+	font-size: 9px;
+}
+
+.Find__disk_right span.grey {
+	font-size: 8px;
+}
+
+.Find__disk_right div.fblock {
+	display: block;
+	padding: 5px 0 5px 0;
+}
+
+.div-sel {
+	display: block;
+	float: left;
+
+}
+
+select.form-sel-disk {
+	display: block;
+	width: 56px;
+	font-size: 11px;
+}
+
+
+
+
+.find__disk-link {
+	color: #154467;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	display: block;
+	text-align: right;
+	margin: 105px 5px 0 150px;
+	/*width: 60px;
+	height: 40px;*/
+}
+/*-----------------------Main Menu --------------------*/
+
+/*-----------------------Main Menu --------------------*/
 .MainMenu {
 	width: 910px;
 	height: 33px;
@@ -116,6 +433,7 @@ img.regline {
 	box-shadow: 2px 3px 5px 0px rgba(87,88,97,1);
 	margin: auto;
 	text-align: left;
+	margin-top: 7px;
 }
 
 .MainMenu-left {
@@ -167,13 +485,19 @@ span.blue {
 	font-size: 12px;
 }
 
-.Find {
+/*.Find {
 	padding-top: 10px;
-}
+}*/
 
 
 
  /*......................................................................*/
+ .content {
+ 	width: 100%;
+ 	height: 632px;
+ 	margin-top: 15px;
+
+ }
 .mainContent {                      /* Основная часть с товарами и ценами на сером фоне*/
 	width: 527px;
 	height: 627px;
@@ -184,6 +508,8 @@ span.blue {
 	background:-webkit-gradient (linear, 0 0, 0 100%, from(#93a7b07), to(#e5e7e8));
 	margin-right: 5px;
 	margin-left: 5px;
+	text-align: center;
+
 }
 
 
@@ -249,6 +575,7 @@ list-style-position: inside;
 text-align: left;
 vertical-align: middle;
 height: 26px;
+margin-top:  4px;
 }
 
 ul.catalogue>li {
@@ -279,18 +606,22 @@ li.cat-item {
 	color: #114165;
 	font-size: 14px;                 /*Пункты левого меню - ШИНЫ, ДИСКИ.*/   
 	list-style-type: none;
-	width: 148px;
-	margin: 12px 0px -6px 6px;
-	/*list-style-image: url(../img/round-icon.png);*/
+	width: 121px;
+	height: 24px;
+	margin: 8px 0px -4px 2px;
+	background: url(../img/round-icon.png) 3px 0px no-repeat;
+	/*background-position-x: 2%;*/
+	padding-left: 25px;
+	/*background-position: left, no-repeat;*/
 	text-align: left;
 	border: solid 1px #79878d;
-	border-radius: 10px;
+	border-radius: 11px;
 }
-li.cat-item:before {
+/*li.cat-item:before {
 	content: url(../img/round-icon.png);
 	display: block;
 	float: left;
-}
+}*/
 li.cat-item>span {
 	height: 29px;
 	padding-left: 5px;
@@ -301,7 +632,7 @@ li.sub {
 	list-style-type: circle;
 	list-style-position: inside;
 	margin-top: 1px;
-	padding-left: 20px; 
+	padding-left: 36px; 
 }
 li.sub>a {
 	text-decoration: none;
@@ -324,7 +655,8 @@ li.sub>a:hover {
 	width: 181px;
 	text-align: left;
 	vertical-align: middle;
-	padding: 0px 0px 0px 2px;
+	padding: 2px 0px 0px 2px;
+	margin: 2px;
 	border: solid 1px #79878d;
 	border-radius: 11px;
 	-webkit-box-shadow: 5px 5px 4px -1px rgba(145,153,157,1);
@@ -392,6 +724,7 @@ button {
 	/*margin-top: 15px;*/
 	padding-top: 35px;
 	padding-left: 41px;
+	text-align: center;
 }
 
 footer {
@@ -399,6 +732,7 @@ footer {
 	width: 908px;
 	background-color: #213a4d;
 	margin-left: 44px;
+	text-align: center;
 }
 footer>a {
 	color: #bec6c9;
