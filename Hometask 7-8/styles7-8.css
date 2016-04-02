@@ -16,6 +16,7 @@ body {
 	text-align: center;
 	border: solid 1px red;
 	width: 100%;
+	height: auto;
 }
 
 @font-face	{
@@ -32,22 +33,133 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 header {
-	height: 276px;
+	height: 843px;
+	width: auto;
 	border: solid 1ps black;
 }
 
+.header__logo {
+	margin: auto;
+	display: inline-block;
+	border: solid 1px red;
+	padding: 66px 170px 0 0;
+}
 
-
+nav {
+	margin: auto;
+	display: inline-block;
+	border: solid 1px red;
+}
 .menu__link {
 	display: inline-block;
 	float: left;
 	text-decoration: none;
 	font-size: 12px;
 	color: white;
+	text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
 	font-family: "League Gothic", sans-serif;
+	padding: 0 26px 13px 5px;
+	border-bottom: solid 1px transparent;
+}
+
+.menu__link:hover {
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: solid 1px #edbfff;
 }
 
 .logo {
 	display: inline-block;
 	float: left;
 }
+
+/*.....................................Violet menu field .........................*/
+.info_about {
+	height: 344px;
+	width: 100%;
+	background: linear-gradient(to top, #36293d 0%, #4f3a59 36%, #765284 100%);
+}
+
+/*........................................Main field with recent apdates and articles...........*/
+article {
+	height: 484px;
+	width: 100%;
+	border-bottom: solid 1px #e6e6e6;
+	background-color: #f9f9f9;
+}
+
+.brands {
+	height: 120px;
+	width: 100%;
+	background-color: #f9f9f9;
+	border-top: solid 1px white;
+	border-bottom: solid 1px white;
+	/*border-bottom: solid 5px #e6e6e6;*/
+}
+
+section {
+	height: 396px;
+	width: 100%;
+	border-top: solid 1px #e6e6e6;
+	background-color: #ececec;
+	
+}
+
+.news {
+	height: 396px;
+	width: 970px;
+	position:relative;
+	margin: auto;
+   /* -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;*/
+}
+.news:before, .news:after
+{
+    content:"";
+    position:absolute;
+    z-index: -1;
+    -webkit-box-shadow:0 0 15px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 15px rgba(0,0,0,0.8);
+    box-shadow:0 0 15px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.news:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+footer {
+	height: 134px;
+	width: 100%;
+	background: url(img/bg_blurr.jpg) no-repeat center bottom;
+}
+
+.footer__wrapper {
+	width: 970px;
+}
+.footer__link {
+	display: inline-block;
+	float: left;
+	text-decoration: none;
+	font-size: 12px;
+	color: white;
+	font-family: "League Gothic", sans-serif;
+	text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
+}
+/*footer img.blurr_image {
+	z-index: -2;
+	height: 134px;
+	width: auto;
+	overflow: hidden;
+}*/
