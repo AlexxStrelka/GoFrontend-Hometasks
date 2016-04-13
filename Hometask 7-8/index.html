@@ -2,51 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hometask 7-8</title>
     <link rel="stylesheet" href="styles7-8.css">
-
+    <link rel="stylesheet" href="style_blurbs.css">
+    <link rel="stylesheet" href="style_media-queries.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
 </head>
 <body>
 <div class="wrapper">	
 <div class="container">
 	<header>
-		<div class="header__logo"><img src="img/logo.png"></div>
-		<nav>
-			<a class="menu__link" href="#">HOME</a>
-			<a class="menu__link" href="#">ABOUT</a>
-			<a class="menu__link" href="#">BLOG</a>
-			<a class="menu__link" href="#">PRODUCTS</a>
-			<a class="menu__link" href="#">LOREM IPSUM</a>
-			<a class="menu__link" href="#">DOLOR SIT AMET</a>
-		</nav>
+		<div class="header__container">
+			<div class="header__container__logo"><img src="img/logo.png"></div>
+			<nav class="header__container__menu">
+				<div class="header__container__menu__link-invisible"></div>
+				<ul>
+					<li class="header__container__menu__link"><a class="" href="#">HOME</a></li>
+					<li class="header__container__menu__link"><a class="" href="#">ABOUT</a></li>
+					<li class="header__container__menu__link"><a class="" href="#">BLOG</a></li>
+					<li class="header__container__menu__link"><a class="" href="#">PRODUCTS</a></li>
+					<li class="header__container__menu__link"><a class="" href="#">LOREM IPSUM</a></li>
+					<li class="header__container__menu__link"><a class="" href="#">DOLOR SIT AMET</a></li>
+					
+				</ul>
+			</nav>
+		</div>
+		<div class="transparent__slider">
+			<div class="slider">
+				<div class="slider__left_text">
+					<p class="slider__left_white">Lorem Ipsum Dolor</p>
+					<p class="slider__left_violet"> IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
+					<p class="slider__left_white_small">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla </p>
+				</div>
+				<div class="slider__phone">
+					<img src="img/iPhone.png">
+				</div>
+				
+			</div>
+		</div>
+		<div class="header__slider-navigation">
+						<a id="header__slider-checked" href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>						
+		</div>
 	</header>
-	<div class="info_about">
+	<!-- <div class="info_about">
 		<div class="info_about__1"></div>
 		<div class="info_about__2"></div>
 		<div class="info_about__3"></div>
-	</div>	
+	</div>	 -->
+	<div class="blurbs">
+		<div class="blurbs__conteiner">
+			<div class="blurbs__1">
+				<div class="blurbs__img">
+					<!-- вставка картинки на фоне через цсс -->
+				</div>
+				<div class="blurbs__text">
+					<h1>ABOUT OUR COMPANY</h1>
+					<div class="blurbs__content">
+						<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+					</div>
+					<a href="#">READ MORE</a>
+				</div>
+			</div>
+			<div class="blurbs__2">
+				<div class="blurbs__img">
+					<!-- вставка картинки на фоне через цсс -->
+				</div>
+				<div class="blurbs__text">
+					<h1>ABOUT OUR COMPANY</h1>
+					<div class="blurbs__content">
+						<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+					</div>
+					<a href="#">READ MORE</a>
+				</div>
+			</div>
+			<div class="blurbs__3">
+				<div class="blurbs__img">
+					<!-- вставка картинки на фоне через цсс -->
+				</div>
+				<div class="blurbs__text">
+					<h1>ABOUT OUR COMPANY</h1>
+					<div class="blurbs__content">
+						<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
+					</div>
+					<a href="#">READ MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<article>
-		<div class="main_article"></div>
-		<div class="updates"></div>
+		<div class="stripe"></div>
+		<div class="main_article">
+			<div class="main_article__left">
+				<img class="main_article__left_photo" src="img/photo-face.png">
+				<div class="main_article__left_all">
+					<h1><span class="main_article__left__header__grey">PINGBULLER <span><span class="main_article__left__header__pink">STARTS HERE</span></h1>
+					<p class="main_article__left__body">
+						“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
+					</p>
+					<div class="main_article__left_navigation">
+						<a id="checked" href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>						
+					</div>
+				</div>
+			</div>
+
+			<div class="main_article__right">
+				<div class="main_article__right_all">
+					<h1>RECENT UPDATES</h1>
+					<div class="main_article__right_block1">
+						<span class="main_article__right_block_bold">Nunc turpis neque feugiat eget</span>
+						<span class="main_article__right_block_light">Posted by Admin on March 13 2012 in Recent News</span>
+					</div>
+					<div class="main_article__right_block2">
+						<span class="main_article__right_block_bold">Nunc turpis neque feugiat eget</span>
+						<span class="main_article__right_block_light">Posted by Admin on March 13 2012 in Recent News</span>
+					</div>
+					<div class="main_article__right_block3">
+						<span class="main_article__right_block_bold">Nunc turpis neque feugiat eget</span>
+						<span class="main_article__right_block_light">Posted by Admin on March 13 2012 in Recent News</span>
+					</div>
+					<div class="main_article__right_link"><a href="#">READ MORE HERE</a></div>
+				</div>
+
+			</div>
+		</div>
 	</article>
 	<div class="brands">
+		<div class="brands__image">
+			<img src="img/brand1.png">
+			<img src="img/brand2.png">
+			<img src="img/brand3.png">
+			<img src="img/brand4.png">
+			<img src="img/brand5.png">
+			<img src="img/brand6.png">
+		</div>
 	</div>
 	<section>
 		<div class="news">
-			<div class="news__1"></div>
-			<div class="news__2"></div>
-			<div class="news__3"></div>
+			<div class="news__1">
+				<h1><span class="news__1_dark">PIGBULL</span><span class="news__1_light">ER</span></h1>
+				<p class="news__1_copyright">Copyright 2013, Pingbull AS</p>
+				<p class="news__1_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, 
+				</p>
+			</div>
+			<div class="news__2">
+				<h1 class="news__2_header">RECENT COMMENTS</h1>
+				<p class="news__2_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat 
+				</p>
+			</div>
+			<div class="news__3">
+				<h1 class="news__3_header">NEWS CATEGORIES</h1>
+				<p class="news__3_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat 
+				</p>
+			</div>
+			<div class="news__1__hidden">
+				<h1 class="news__3_header">NEWS CATEGORIES</h1>
+				<p class="news__3_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat 
+				</p>
+			</div>
+			<div class="news__2__hidden">
+				<h1 class="news__3_header">NEWS CATEGORIES</h1>
+				<p class="news__3_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat 
+				</p>
+			</div>
 		</div>
 	</section>
 	<footer>
+		<!-- <div class="footer__shadow"></div> -->
 		<!-- <img class="blurr_image" src="img/bg_blurr.jpg"> -->
 		<div class="footer__wrapper">
-			<a class="footer__link" href="#">HOME</a>
-			<a class="footer__link" href="#">ABOUT</a>
-			<a class="footer__link" href="#">BLOG</a>
-			<a class="footer__link" href="#">PRODUCTS</a>
-			<a class="footer__link" href="#">LOREM IPSUM</a>
-			<a class="footer__link" href="#">DOLOR SIT AMET</a>
+			<div class="footer__wrapper_linkgroup">
+				<a class="footer__wrapper_link" href="#">HOME</a>
+				<a class="footer__wrapper_link" href="#">ABOUT</a>
+				<a class="footer__wrapper_link" href="#">BLOG</a>
+				<a class="footer__wrapper_link" href="#">PRODUCTS</a>
+				<a class="footer__wrapper_link" href="#">LOREM IPSUM</a>
+				<a class="footer__wrapper_link" href="#">DOLOR SIT AMET</a>
+			</div>
+			<div class="footer__wrapper_signature">
+				<span class="footer__wrapper_signature_light">Designed by </span>
+				<span class="footer__wrapper_signature_bold">Pingbull AS</span>
+			</div>
 		</div>
 	</footer>
 

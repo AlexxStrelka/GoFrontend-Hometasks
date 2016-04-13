@@ -1,0 +1,488 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*......................Адаптация верхнего меню.................*/
+	@media only screen and (max-width: 960px) and (min-width: 481px), only screen and (max-device-width: 960px) and (orientation : landscape) {
+		.header__container {
+			width: 100%;
+		}
+		
+		header {
+			height: 796px;
+		}
+		.header__container__logo {
+		    padding: 66px 255px 0 20px;
+		}
+
+		nav.header__container__menu {
+		float: left;
+		padding: 34px 0 0 0;
+		width: 90%;
+		}
+		li.header__container__menu__link {
+    
+    	padding: 0 1.5% 5px 1.5%;
+		}
+		
+/*......................................Слайдер на прозрачном ФОНЕ..............*/
+		.slider {
+		    width: 100%;
+		}
+
+		.slider__left_text {
+			width: 40%;
+			height: 176px;
+    		padding: 93px 0 0 24px;
+    		overflow: hidden;
+		}
+		.slider__left_white {
+	    font-size: 48px;
+		}
+
+		.slider__left_violet {
+		font-size: 24px;
+		}
+
+		.slider__left_white_small {
+		 font-size: 16px;
+		}
+		.slider__phone {
+		    padding: 0 16px 0 10px;
+		}
+/*....................................Статья с фото и RECENT UPDATES.........................*/
+		.main_article {
+			width: 100%;
+			height: auto;
+		}
+		span.main_article__left__header__grey {
+	    font-size: 24px;
+    	}
+
+   		span.main_article__left__header__pink {
+		font-size: 24px;
+		padding-right: 100px;
+		}
+        .main_article__left {
+        	width: 49%;
+        	overflow: hidden;
+/*        	margin-left: 32px;
+*/        }
+        .main_article__left_all {
+        	width: 100%;
+        }
+
+		p.main_article__left__body {
+		    padding: 0 80px 30px 40px;
+		    height: 146px;
+		    overflow: hidden;
+		}
+
+		.main_article__left_navigation {
+			padding: 45px 0 0 0;
+		    text-align: center;
+		}
+        .main_article__right {
+        	width: 49%;
+        	float: right;
+        }
+
+        .main_article__right_all {
+		padding: 32px 20px 0 55px;
+
+		}
+		.main_article__right_block1, .main_article__right_block2, .main_article__right_block3 {
+			width: 100%;
+			/*height: 47px;*/
+			overflow: hidden;
+		}
+
+		.main_article__right_block_light {
+			height: 21px;
+			overflow: hidden;
+		}
+
+		.header__slider-navigation {
+			/*width: auto;*/
+			text-align: right;
+			padding: 37px 106px 0 0px;
+   		}
+/*....................................BRAND LOGOS...................................*/
+		.brands__image>img {
+		    padding: 24px 0 0px 5%;
+
+		}
+
+		.brands__image {
+		    width: 100%;
+		    height: auto;
+		    margin: auto;
+		    /* border: solid 1px red; */
+		}
+
+/*..................................Нижние колонки с новостями......................*/
+		.news__1, .news__2 {
+			display: none;
+		}
+
+		.news__1__hidden, .news__2__hidden{
+			display: block;
+		}
+
+		.news {
+			height: 396px;
+			width: 100%;
+			margin: auto;
+			padding: 0 0 0 0px;
+		}
+		
+		.news__1__hidden, .news__2__hidden, .news__3 {
+			padding: 100px 2.5% 0 2.5%;
+
+		}
+		.news__3_header {
+		    font-size: 24px; /*Column headers*/
+		
+	    }
+/*...........................FOOTER MENU and Designed By.............................*/
+	footer {
+	height: 198px;
+	
+}
+	.footer__wrapper {
+		width: 100%;
+	}
+
+	.footer__wrapper_signature {
+		margin: 100px 20px 0 0;
+	}
+	.footer__wrapper_linkgroup {
+		width: 75%;
+		padding: 48px 0px 0 3%;
+		
+	}
+	.footer__wrapper_link {
+		padding-right: 28px;
+		
+	}
+
+
+	}	
+/*................................................................*/
+
+@media only screen and (max-width: 705px), only screen and (max-device-width: 705px) {
+			.brands {
+				height: 234px;
+				}
+}
+/*.......................from 480 to 768 px.........................................*/
+
+
+@media only screen and (max-width: 481px), only screen and (max-device-width: 481px) {
+			
+			header {
+				height: 546px;
+			}
+			.header__container {
+				margin: auto;
+				text-align: center;
+				width: 100%;
+			}
+			
+			.header__container__logo {
+				padding: 67px 0px 0 0;
+				text-align: center;
+			}
+
+			
+
+			nav.header__container__menu{
+				/*margin: auto;*/
+				display: block;
+				width: 246px;
+				height: 258px;
+				background-color: rgba(63, 50, 71, 0.9);
+				border-radius: 10px;
+				border: solid 1px #141d24;
+				/*float: none;*/
+				text-align: center;
+				/*border: solid 1px red;*/
+				padding: 1px 0 0 0px;
+				position: absolute;
+				/*top: 115px;
+    			right: 91px;*/
+				z-index: 50;
+				margin: 0 25%;
+			}
+			/*.header__container__menu>ul {
+				/*display: none;*/
+				/*width: 246px;
+				height: 258px;
+				background-color: rgba(63, 50, 71, 0.9);
+				border-radius: 10px;
+				border: solid 1px #141d24;
+				/*float: none;*/
+				/*text-align: center;*/
+				/*border: solid 1px red;*/
+				/*padding: 1px 0 0 0px;
+				position: absolute;
+				top: 115px;
+    			right: 91px;
+				z-index: 50;
+				}*/
+
+				
+			li.header__container__menu__link {
+				display: block;
+				font-size: 24px;
+				color: white;
+				text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
+				font-family: 'League Gothic', sans-serif;
+				padding: 0 0px 0px 0px;
+				border-top: solid 1px #5f486a;
+				border-bottom: solid 1px #36283e;
+				height: 41px;
+				width: 243px;
+				line-height: 43px;
+				
+			}
+
+			li.header__container__menu__link:first-child {
+				border-top: none;
+				border-top-left-radius: 10px; 
+    			border-top-right-radius: 10px;
+    			display: block;
+			}
+			li.header__container__menu__link:last-child {
+				border-bottom: none;
+				border-bottom-left-radius: 10px; 
+    			border-bottom-right-radius: 10px;
+			}
+			li.header__container__menu__link:hover {
+				background-color: rgba(43, 34, 49, 0.8);
+				border-bottom: solid 2px #edbfff;
+			}
+			li.header__container__menu__link>a:hover {
+				border-bottom: none;
+				border-radius: 10px;
+			}
+			.header__container__menu>ul {
+				position: inherit;
+				display: block;
+				margin: auto;
+				text-align: center;
+				
+			}
+
+/*......................................Слайдер на прозрачном ФОНЕ..............*/
+		.transparent__slider {
+	    height: 244px;
+	    margin-top: 198px;
+	    margin-top: 124px;
+	 	}
+			
+
+		.slider__left_text {
+			width: 45%;
+			height: 62px;
+    		padding: 93px 0 0 40px;
+    		overflow: hidden;
+		}
+		.slider__left_white {
+	    font-size: 35px;
+		}
+
+		.slider__left_violet {
+		font-size: 18px;
+		}
+
+		.slider__left_white_small {
+		 display: none;
+		}
+		
+		 .slider__phone>img {
+		    top: 227px;
+		    right: 35px;
+		    height: 299px;
+		}
+		.header__slider-navigation {
+			padding: 19px 0 0 0px;
+		  }
+
+/*.................................Статьи с фото...........................*/
+			article {
+				height: 785px;
+			}
+
+			.main_article {
+						width: 100%;
+						height: 785px;
+						padding: 0 0 0 0;
+			}
+
+			span.main_article__left__header__grey {
+				    font-size: 30px;
+			    	}
+
+			span.main_article__left__header__pink {
+					font-size: 30px;
+					padding-right: 100px;
+			}
+
+			.main_article__left {
+			    width: 90%;
+			    overflow: hidden;
+			    padding: 5px 0 0 0px;
+			    margin: 66px 0 0 20px;
+			    /* margin-left: 32px; */
+			}
+
+			.main_article__left_all {
+			        	width: 100%;
+			        	height: 325px;
+			        	margin: auto;
+						padding: 0px 35px 10px 35px;
+	
+			        }
+			p.main_article__left__body {
+					    padding: 0 80px 30px 40px;
+					    height: 146px;
+					    overflow: hidden;
+					}
+			.main_article__left_navigation {
+						/*padding: 45px 0 0 0;*/
+					    text-align: center;
+					    margin-top: 36px;
+			}
+			 .main_article__right {
+			        	width: 100%;
+			        	float: right;
+			        	display: block;
+			}
+
+			.main_article__right_all {
+					padding: 46px 20px 0px 55px;
+
+			}
+			.main_article__right_block1, .main_article__right_block2, .main_article__right_block3 {
+						width: 100%;
+						/*height: 47px;*/
+						overflow: hidden;
+			}
+
+			.main_article__right_block_light {
+						height: 21px;
+						overflow: hidden;
+			}
+/*...................................BRANDS 480px........................
+*/
+
+			.brands {
+				height: 234px;
+				}
+
+			.brands__image {
+					    width: 100%;
+					    height: auto;
+					    margin: auto;
+					    /* border: solid 1px red; */
+					}
+			.brands__image>img {
+					    padding: 24px 0 0px 10%;
+					}
+
+/*..................................NEWS................................*/
+
+		section {
+			height: 668px;
+			}
+
+		.news__1, .news__2 {
+			display: none;
+		}
+
+		.news__1__hidden, .news__2__hidden{
+			display: block;
+		}
+
+		.news {
+			height: 668px;
+			width: 100%;
+			margin: auto;
+			padding: 0 0 0 0px;
+		}
+		
+		.news__1__hidden {
+			padding: 78px 2.5% 0 2.5%;
+			display: block;
+			width: 90%;
+			height: 110px;
+			overflow: hidden;
+		}
+		.news__2__hidden, .news__3 {
+					padding: 57px 2.5% 0 2.5%;
+					display: block;
+					width: 90%;
+					height: 110px;
+					overflow: hidden;
+				}
+
+
+		.news__3_header {
+		    font-size: 24px; /*Column headers*/
+		
+	    }
+			.news__2_text, .news__3_text {
+				color: #787878;              /*Основной текст в колонке*/
+				font-size: 16px;
+				font-family: 'Open Sans';
+				font-weight: 100;
+				display: block;
+				padding: 15px 0 0 0;
+				height: 151px;
+				overflow: hidden;
+			}
+
+
+
+
+
+/*...........................FOOTER.......................*/
+footer {
+	height: 200px;
+	}
+
+.footer__wrapper {
+		width: 100%;
+		height: 199px;
+	}
+
+	/*.footer__wrapper_signature {
+		margin: 100px 20px 0 0;
+	}*/
+	.footer__wrapper_linkgroup {
+		width: 100%;
+		margin: auto;
+		display: block;
+		padding: 48px 0px 0 3%;
+		
+	}
+	.footer__wrapper_link {
+		padding-right: 14px;
+		
+	}
+
+	.footer__wrapper_signature {
+		float: none;
+		margin: 103px 20px 0 0;
+		display: block;
+		height: 30px;
+		text-align: center;
+	}
+
+
+
+
+}
