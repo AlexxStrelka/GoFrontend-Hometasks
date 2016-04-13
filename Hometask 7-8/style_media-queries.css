@@ -184,6 +184,7 @@
 			
 			header {
 				height: 546px;
+				width: 100%;
 			}
 			.header__container {
 				margin: auto;
@@ -196,44 +197,34 @@
 				text-align: center;
 			}
 
-			
+			nav {
+				height: 40px;
+			}
 
-			nav.header__container__menu{
-				/*margin: auto;*/
-				display: block;
+			ul.header__container__menu{
+				display: none;
 				width: 246px;
 				height: 258px;
 				background-color: rgba(63, 50, 71, 0.9);
 				border-radius: 10px;
 				border: solid 1px #141d24;
-				/*float: none;*/
 				text-align: center;
-				/*border: solid 1px red;*/
 				padding: 1px 0 0 0px;
 				position: absolute;
-				/*top: 115px;
-    			right: 91px;*/
 				z-index: 50;
 				margin: 0 25%;
 			}
-			/*.header__container__menu>ul {
-				/*display: none;*/
-				/*width: 246px;
-				height: 258px;
-				background-color: rgba(63, 50, 71, 0.9);
-				border-radius: 10px;
-				border: solid 1px #141d24;
-				/*float: none;*/
-				/*text-align: center;*/
-				/*border: solid 1px red;*/
-				/*padding: 1px 0 0 0px;
-				position: absolute;
-				top: 115px;
-    			right: 91px;
-				z-index: 50;
-				}*/
+			
 
-				
+			.header__container__menu__link-invisible {
+					display: block;
+					padding: 30px 0px 0 0px;
+			}	
+			.header__container__menu__link-invisible>a {
+				padding: 0px 5px;
+			}
+
+			
 			li.header__container__menu__link {
 				display: block;
 				font-size: 24px;
@@ -246,8 +237,8 @@
 				height: 41px;
 				width: 243px;
 				line-height: 43px;
-				
 			}
+
 
 			li.header__container__menu__link:first-child {
 				border-top: none;
@@ -279,10 +270,12 @@
 /*......................................Слайдер на прозрачном ФОНЕ..............*/
 		.transparent__slider {
 	    height: 244px;
-	    margin-top: 198px;
-	    margin-top: 124px;
+	    margin-top: 55px;
+	   /* margin-top: 124px;*/
 	 	}
-			
+		.slider {
+		 	width: 100%;
+		 }	
 
 		.slider__left_text {
 			width: 45%;
@@ -303,8 +296,8 @@
 		}
 		
 		 .slider__phone>img {
-		    top: 227px;
-		    right: 35px;
+		    top: 196px;
+		    right: 20px;
 		    height: 299px;
 		}
 		.header__slider-navigation {
@@ -446,9 +439,6 @@
 			}
 
 
-
-
-
 /*...........................FOOTER.......................*/
 footer {
 	height: 200px;
@@ -481,6 +471,35 @@ footer {
 		height: 30px;
 		text-align: center;
 	}
+
+
+}
+
+/*.......................from 320 to 480 px.........................................*/
+
+
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+
+		 .transparent__slider {
+		   background-color: transparent; /*Прозрачный фон слайдера */
+		    height: 400px;
+		    width: 100%;
+		    margin-top: 168px;
+		 }
+
+		.slider__phone {
+		 	display: none;
+		 }
+		
+		.slider__left_text {
+		 	width: 100%;
+		 	
+		 }
+
+
+
+
+
 
 
 

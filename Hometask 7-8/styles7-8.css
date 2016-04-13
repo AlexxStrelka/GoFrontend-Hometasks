@@ -53,17 +53,17 @@ header {
 
 .header__container__menu__link-invisible {                   /*...........Invisible HOME link....*/
 	display: none;
-	position: absolute;
+	/*position: absolute;
 	top: 142px;
 	left: 202px;
-	z-index: 60;
+	z-index: 60;*/
 	font-size: 24px;
 	color: white;
 	text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
 	font-family: 'League Gothic', sans-serif;
 	padding: 0 13px 5px 13px;
 }
-li.header__container__menu__link-invisible>a {
+.header__container__menu__link-invisible>a {
 	text-decoration: none;
 	color: white;
 	border-bottom: solid 2px #edbfff;
@@ -136,6 +136,7 @@ li.header__container__menu__link>a {
  	color: white;
  	font-weight: 100;
  	font-size: 60px;
+ 	text-shadow: 1px 1px 1px #000;
  }
 
  .slider__left_violet {
@@ -143,6 +144,7 @@ li.header__container__menu__link>a {
  	color: #edbfff;
  	font-weight: 100;
  	font-size: 32px;
+ 	text-shadow: 1px 1px 1px #000;
  }
 
  .slider__left_white_small {
