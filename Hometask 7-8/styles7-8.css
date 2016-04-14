@@ -69,10 +69,12 @@ header {
 	border-bottom: solid 2px #edbfff;
 }
 
+nav {
+	float: right;
+}
 
 
-
-nav.header__container__menu {
+ul.header__container__menu {
 	/*margin: auto;*/
 	display: inline-block;
 	/*border: solid 1px red;*/
@@ -354,7 +356,7 @@ p.main_article__left__body {
 	padding: 0 0 0 65px;
 }
 
-.main_article__right_link>a {
+.main_article__right_link>a, .main_article__right_link--invisible>a{
 	text-decoration: none;
 	color: #454545;
 	font-size: 18px;
@@ -363,6 +365,10 @@ p.main_article__left__body {
 	text-align: right;
 	display: block;
 	padding: 5px 0 0 0;
+}
+
+.main_article__right_link--invisible>a {
+	display: none;
 }
 
 /*.......................................Brands logo ....................................*/
@@ -551,7 +557,7 @@ footer {
 	font-family: "League Gothic", sans-serif;
 	text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
 	padding-right: 40px;
-	
+	text-shadow: 1px 1px 1px #000;	
 }
 
 .footer__wrapper_signature_light {
@@ -570,11 +576,13 @@ footer {
 	font-weight: bold;
 	display: inline-block;
 	padding: 0px 0 0 0;
+	text-shadow: 1px 1px 1px #000;
 }
 
 .footer__wrapper_signature {
 	float: right;
 	margin-top: 51px;
+	text-shadow: 1px 1px 1px #000;
 }
 
 /*footer img.blurr_image {

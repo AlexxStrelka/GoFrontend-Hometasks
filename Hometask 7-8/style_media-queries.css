@@ -17,7 +17,7 @@
 		    padding: 66px 255px 0 20px;
 		}
 
-		nav.header__container__menu {
+		ul.header__container__menu {
 		float: left;
 		padding: 34px 0 0 0;
 		width: 90%;
@@ -27,6 +27,9 @@
     	padding: 0 1.5% 5px 1.5%;
 		}
 		
+		nav {
+		float: none;
+	}
 /*......................................Слайдер на прозрачном ФОНЕ..............*/
 		.slider {
 		    width: 100%;
@@ -199,6 +202,7 @@
 
 			nav {
 				height: 40px;
+				float: none;
 			}
 
 			ul.header__container__menu{
@@ -301,7 +305,7 @@
 		    height: 299px;
 		}
 		.header__slider-navigation {
-			padding: 19px 0 0 0px;
+			padding: 19px 190px 0 0px;
 		  }
 
 /*.................................Статьи с фото...........................*/
@@ -328,26 +332,26 @@
 			    width: 90%;
 			    overflow: hidden;
 			    padding: 5px 0 0 0px;
-			    margin: 66px 0 0 20px;
+			    margin: 80px 0 0 20px;
 			    /* margin-left: 32px; */
 			}
 
 			.main_article__left_all {
 			        	width: 100%;
-			        	height: 325px;
+			        	height: 305px;
 			        	margin: auto;
 						padding: 0px 35px 10px 35px;
 	
 			        }
 			p.main_article__left__body {
-					    padding: 0 80px 30px 40px;
+					    padding: 9px 80px 30px 16px;
 					    height: 146px;
 					    overflow: hidden;
 					}
 			.main_article__left_navigation {
 						/*padding: 45px 0 0 0;*/
 					    text-align: center;
-					    margin-top: 36px;
+					    margin-top: 21px;
 			}
 			 .main_article__right {
 			        	width: 100%;
@@ -356,19 +360,28 @@
 			}
 
 			.main_article__right_all {
-					padding: 46px 20px 0px 55px;
+					padding: 33px 20px 0px 55px;
 
 			}
 			.main_article__right_block1, .main_article__right_block2, .main_article__right_block3 {
 						width: 100%;
 						/*height: 47px;*/
 						overflow: hidden;
+						padding: 4px 0 0 2px;
 			}
 
 			.main_article__right_block_light {
 						height: 21px;
 						overflow: hidden;
 			}
+
+			.main_article__right_link>a {
+			display: none;
+			}
+			.main_article__right_link--invisible>a {
+				display: block;
+			}
+
 /*...................................BRANDS 480px........................
 */
 
@@ -383,7 +396,7 @@
 					    /* border: solid 1px red; */
 					}
 			.brands__image>img {
-					    padding: 24px 0 0px 10%;
+					    padding: 36px 5% 0px 5%;
 					}
 
 /*..................................NEWS................................*/
@@ -456,7 +469,7 @@ footer {
 		width: 100%;
 		margin: auto;
 		display: block;
-		padding: 48px 0px 0 3%;
+		padding: 48px 0px 0 10%;
 		
 	}
 	.footer__wrapper_link {
@@ -480,11 +493,16 @@ footer {
 
 @media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
 
+		 header {
+				height: 515px;
+				width: 100%;
+			}
+
 		 .transparent__slider {
-		   background-color: transparent; /*Прозрачный фон слайдера */
-		    height: 400px;
+		 	 background-color: transparent; /*Прозрачный фон слайдера */
+		    height: 50px;
 		    width: 100%;
-		    margin-top: 168px;
+		    margin-top: 133px;
 		 }
 
 		.slider__phone {
@@ -493,15 +511,64 @@ footer {
 		
 		.slider__left_text {
 		 	width: 100%;
-		 	
+		 	height: auto;
+		 	text-align: center;
+		    padding: 0px 0 0 0px;
+		    overflow: hidden;
 		 }
 
+		.header__slider-navigation {
+			padding: 87px 0 0 0px;
+		  }
+
+		.header__container__menu__link-invisible {
+					display: block;
+					padding: 40px 0px 0 0px;
+		}	
 
 
+		span.main_article__left__header__grey, span.main_article__left__header__pink {
+		font-size: 24px;
+		display: block;
+		   		}
 
+		p.main_article__left__body {
+		padding: 9px 80px 30px 34px;
+		}
 
+		.main_article__right_all {
+			padding: 20px 0px 0 20px;
+		}
+		
+		.main_article__right_block_bold {
+		width: 165px;
+		height: 21px;
+		overflow: hidden;
+		}	
 
+		.main_article__right_link--invisible>a {
+			padding: 5px 20px 0 0;
+		}
 
+		.brands {
+				height: 422px;
+				}
+
+		.brands__image>img {
+					    padding: 50px 6% 0px 6%;
+					}
+		section {
+			display: none;
+			height: 0px;
+		}
+		.footer__wrapper_linkgroup {
+		display: none;
+		}
+
+		.footer__wrapper_signature {
+				float: none;
+				margin: 38px 20px 0 0;
+				}
 
 
 }

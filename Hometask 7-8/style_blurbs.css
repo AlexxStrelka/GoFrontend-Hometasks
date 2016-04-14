@@ -67,11 +67,11 @@
 	position: absolute;
 }
 
-.blurbs__2 .blurbs__img	{
+.blurbs__container2 .blurbs__img	{
 	background: url(img/sprite2.png) no-repeat -30px 0px; 
 }
 
-.blurbs__3 .blurbs__img	{
+.blurbs__container3 .blurbs__img	{
 	background: url(img/sprite2.png) no-repeat -60px 0px; 
 }
 
@@ -89,7 +89,7 @@
 	overflow: hidden;
 }
 
-.blurbs__1 {
+.blurbs__container1 {
 	float: left;
 	width: 30%;
 	margin: 10px 1%;
@@ -98,7 +98,7 @@
 	/*border: red solid 1px;*/
 }
 
-.blurbs__2 {
+.blurbs__container2 {
 	float: left;
 	width: 30%;
 	margin: 10px 1%;
@@ -107,7 +107,7 @@
 	/*border: red solid 1px;*/
 }
 
-.blurbs__3 {
+.blurbs__container3 {
 	float: left;
 	width: 30%;
 	margin: 10px 1%;
@@ -116,7 +116,7 @@
 	/*border: red solid 1px;*/
 }
 @media (min-width: 960px) {
-	.blurbs__conteiner {
+	.blurbs__container {
 		width: 960px;
 		height: 250px;
 		margin: 0px auto;
@@ -143,15 +143,15 @@
 		.blurbs__text{
 			height: 135px; 
 		}
-		.blurbs__1 {
+		.blurbs__container1 {
 			width: 95%;
 			height: 150px;
 		}
-		.blurbs__2 {
+		.blurbs__container2 {
 			width: 95%;
 			height: 150px;
 		}
-		.blurbs__3 {
+		.blurbs__container3 {
 			width: 95%;
 			height: 150px;
 		}
@@ -161,4 +161,25 @@
 		.blurbs {
 			height: 590px;
 		}
+	}
+
+	@media (max-width: 767px) {
+		.blurbs {
+			padding-top: 65px;
+		}
+		.blurbs__container1 {
+		margin: 5px 1%;
+		}
+
+		..blurbs__container2 {
+		margin: 5px 1%;
+		}
+
+		.blurbs__container3 {
+		margin: 5px 1%;
+		}
+		.blurbs {
+			height: 600px;
+		}
+
 	}
