@@ -17,7 +17,7 @@
 		    padding: 66px 255px 0 20px;
 		}
 
-		ul.header__container__menu {
+		ul.header__container__menu__linkgroup {
 		float: left;
 		padding: 34px 0 0 0;
 		width: 90%;
@@ -193,6 +193,7 @@
 				margin: auto;
 				text-align: center;
 				width: 100%;
+				height: auto;
 			}
 			
 			.header__container__logo {
@@ -202,10 +203,17 @@
 
 			nav {
 				height: 40px;
+				width: 100%;
 				float: none;
 			}
 
-			ul.header__container__menu{
+			ul.header__container__menu {
+				float: none;
+				margin: auto;
+				padding: 0 0 0 0;
+			}
+
+			ul.header__container__menu__linkgroup{
 				display: none;
 				width: 246px;
 				height: 258px;
@@ -217,17 +225,36 @@
 				position: absolute;
 				z-index: 50;
 				margin: 0 25%;
+				    top: 131px;
+    			right: -21px;
+				
 			}
 			
+			.header__container__menu__link>a.header__container__link-select {     /*................UPPER HOME decoration>>>>*/
+				text-decoration: none;
+				color: white;
+				border-bottom: solid 2px #edbfff;
+				padding: 0 7px 0 7px;
+			}
 
 			.header__container__menu__link-invisible {
 					display: block;
+					text-align: center;
+					float: none;
 					padding: 30px 0px 0 0px;
 			}	
 			.header__container__menu__link-invisible>a {
 				padding: 0px 5px;
+				display: block;
+				margin: auto;
+				width: 50px;
+				/*position: absolute;
+				top: -10px;*/
 			}
-
+ 
+ .header__container__menu__link-invisible:hover > ul.header__container__menu__linkgroup {
+ 	display: block;
+ }
 			
 			li.header__container__menu__link {
 				display: block;
@@ -241,6 +268,7 @@
 				height: 41px;
 				width: 243px;
 				line-height: 43px;
+				
 			}
 
 
@@ -263,13 +291,13 @@
 				border-bottom: none;
 				border-radius: 10px;
 			}
-			.header__container__menu>ul {
+			/*.header__container__menu>ul {
 				position: inherit;
 				display: block;
 				margin: auto;
 				text-align: center;
 				
-			}
+			}*/
 
 /*......................................Слайдер на прозрачном ФОНЕ..............*/
 		.transparent__slider {
@@ -525,6 +553,11 @@ footer {
 					display: block;
 					padding: 40px 0px 0 0px;
 		}	
+		ul.header__container__menu__linkgroup{
+				top: 141px;
+    			right: -45px;
+				
+			}
 
 
 		span.main_article__left__header__grey, span.main_article__left__header__pink {

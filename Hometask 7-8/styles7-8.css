@@ -52,7 +52,7 @@ header {
 }
 
 .header__container__menu__link-invisible {                   /*...........Invisible HOME link....*/
-	display: none;
+	display: block;
 	/*position: absolute;
 	top: 142px;
 	left: 202px;
@@ -61,20 +61,24 @@ header {
 	color: white;
 	text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
 	font-family: 'League Gothic', sans-serif;
-	padding: 0 13px 5px 13px;
+	padding: 0 0px 0px 0px;
 }
 .header__container__menu__link-invisible>a {
+	display: none;
 	text-decoration: none;
 	color: white;
 	border-bottom: solid 2px #edbfff;
 }
+/*.header__container__menu__linkgroup {
+	display: block;
+}*/
 
 nav {
 	float: right;
 }
 
 
-ul.header__container__menu {
+ul.header__container__menu__linkgroup {
 	/*margin: auto;*/
 	display: inline-block;
 	/*border: solid 1px red;*/
