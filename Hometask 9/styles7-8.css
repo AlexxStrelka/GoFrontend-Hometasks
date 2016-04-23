@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 * {
 	margin: 0;
@@ -32,6 +31,19 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/open-sans-light_allfont.ru-webfont.eot');
+    src: url('fonts/open-sans-light_allfont.ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/open-sans-light_allfont.ru-webfont.woff2') format('woff2'),
+         url('fonts/open-sans-light_allfont.ru-webfont.woff') format('woff'),
+         url('fonts/open-sans-light_allfont.ru-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 header {
 	height: 843px;
 	width: auto;
@@ -60,6 +72,7 @@ header {
 	font-size: 24px;
 	color: white;
 	text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
+	filter: Shadow(Color=#646B63, Direction=135, Strength=3);
 	font-family: 'League Gothic', sans-serif;
 	padding: 0 0px 0px 0px;
 }
@@ -73,8 +86,9 @@ header {
 	display: block;
 }*/
 
-nav {
+.nav {
 	float: right;
+	/*border: solid 1px red;*/
 }
 
 
@@ -101,13 +115,14 @@ li.header__container__menu__link>a {
 	text-decoration: none;
 	color: white;
 	border-bottom: solid 2px transparent;
+
 }
 
-/*li.header__container__menu__link>a:hover {
+li.header__container__menu__link>a:hover {
 	text-decoration: none;
 	cursor: pointer;
 	border-bottom: solid 2px #edbfff;
-}*/
+}
 
 .logo {
 	display: inline-block;
@@ -143,6 +158,7 @@ li.header__container__menu__link>a {
  	font-weight: 100;
  	font-size: 60px;
  	text-shadow: 1px 1px 1px #000;
+ 	filter: Shadow(Color=#000000, Direction=135, Strength=3);
  }
 
  .slider__left_violet {
@@ -151,6 +167,8 @@ li.header__container__menu__link>a {
  	font-weight: 100;
  	font-size: 32px;
  	text-shadow: 1px 1px 1px #000;
+ 	filter: Shadow(Color=#000000, Direction=135, Strength=3);
+ 	/*<!--[if IE 8]>filter: progid:DXImageTransform.Microsoft.Shadow(Color=#000000, Direction=45, Strength=10);<![endif]-->*/
  }
 
  .slider__left_white_small {
@@ -202,11 +220,7 @@ li.header__container__menu__link>a {
 }
 
 /*.....................................Violet menu field .........................*/
-.info_about {
-	height: 344px;
-	width: 100%;
-	background: linear-gradient(to top, #36293d 0%, #4f3a59 36%, #765284 100%);
-}
+/* brurbs.css */
 
 /*........................................Main field with recent apdates and articles...........*/
 .stripe {
@@ -274,6 +288,7 @@ p.main_article__left__body {
 	font-size: 16px;
 	font-family: 'Open Sans';
 	padding: 0 30px 30px 40px;
+	clear: both;
 }
 
 .main_article__left_navigation {
@@ -390,11 +405,10 @@ p.main_article__left__body {
 	height: auto;
 	margin: auto;
 	text-align: center;
-	/*border: solid 1px red;*/
-}
+	}
+
 .brands__image>img {
 	display: inline-block;
-	/*border: solid 1px green;*/
 	padding: 24px 30px 0px 30px;
 }
 
@@ -517,7 +531,6 @@ section {
 	color: #454545;              /*Column headers*/
 	font-size: 30px;
 	font-family: 'League Gothic';
-	/*font-weight: bold;*/
 	font-weight: normal;
 	display: inline-block;
 	padding: 0px 0 0 0;
@@ -528,7 +541,7 @@ section {
 }
 
 /*..............................FOOTER...............................*/
-footer {
+.footer {
 	height: 114px;
 	width: 100%;
 	background: url(img/bg_blurr.jpg) no-repeat center bottom;
@@ -545,7 +558,6 @@ footer {
 }
 
 .footer__wrapper_linkgroup {
-	/*border: solid 1px green;*/
 	height: 20px;
 	width: 70%;
 	padding: 48px 0px 0 30px;
@@ -561,8 +573,8 @@ footer {
 	font-family: "League Gothic", sans-serif;
 	text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
 	padding-right: 40px;
-	text-shadow: 1px 1px 1px #000;	
-}
+	text-shadow: 1px 1px 1px #000;
+	}
 
 .footer__wrapper_signature_light {
 	color: white;              /*Основной текст в колонке*/
@@ -581,7 +593,7 @@ footer {
 	display: inline-block;
 	padding: 0px 0 0 0;
 	text-shadow: 1px 1px 1px #000;
-}
+	}
 
 .footer__wrapper_signature {
 	float: right;
@@ -589,9 +601,3 @@ footer {
 	text-shadow: 1px 1px 1px #000;
 }
 
-/*footer img.blurr_image {
-	z-index: -2;
-	height: 134px;
-	width: auto;
-	overflow: hidden;
-}*/

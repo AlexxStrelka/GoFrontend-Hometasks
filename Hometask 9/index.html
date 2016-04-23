@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hometask 7-8</title>
+    <title>Hometask 9</title>
     <link rel="stylesheet" href="styles7-8.css">
     <link rel="stylesheet" href="style_blurbs.css">
     <link rel="stylesheet" href="style_media-queries.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    
+    <!--[if gt IE 7]><link href="styleIE.css" rel="stylesheet" type="text/css"/><![endif]-->
+    <!--[if gt IE 7]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+   <!--[if gt IE 7]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
 </head>
 <body>
 <div class="wrapper">	
@@ -16,7 +29,7 @@
 	<header>
 		<div class="header__container">
 			<div class="header__container__logo"><img src="img/logo.png" alt="logo"></div>
-			<nav>
+			<div class="nav">
 				<ul class="header__container__menu">
 					<li class="header__container__menu__link-invisible"><a href="#">HOME</a>
 						<ul class="header__container__menu__linkgroup">
@@ -31,7 +44,7 @@
 					
 					
 				</ul>
-			</nav>
+			</div>
 		</div>
 		<div class="transparent__slider">
 			<div class="slider">
@@ -53,11 +66,7 @@
 						<a href="#"></a>						
 		</div>
 	</header>
-	<!-- <div class="info_about">
-		<div class="info_about__1"></div>
-		<div class="info_about__2"></div>
-		<div class="info_about__3"></div>
-	</div>	 -->
+	
 	<div class="blurbs">
 		<div class="blurbs__container">
 			<div class="blurbs__container1">
@@ -105,7 +114,7 @@
 			<div class="main_article__left">
 				<img class="main_article__left_photo" src="img/photo-face.png" alt="photo">
 				<div class="main_article__left_all">
-					<h1><span class="main_article__left__header__grey">PINGBULLER </span><span class="main_article__left__header__pink">STARTS HERE</span></h1>
+					<h1><span class="main_article__left__header__grey">PINGBULLER </span><span class="main_article__left__header__pink"> STARTS HERE</span></h1>
 					<p class="main_article__left__body">
 						“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
 					</p>
@@ -180,7 +189,7 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+	<div class="footer">
 		<!-- <div class="footer__shadow"></div> -->
 		<!-- <img class="blurr_image" src="img/bg_blurr.jpg"> -->
 		<div class="footer__wrapper">
@@ -197,7 +206,7 @@
 				<span class="footer__wrapper_signature_bold">Pingbull AS</span>
 			</div>
 		</div>
-	</footer>
+	</div>
 
 </div>
 </div>

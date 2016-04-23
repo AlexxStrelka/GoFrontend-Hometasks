@@ -1,0 +1,105 @@
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+
+.header__container__menu__link-invisible, li.header__container__menu__link>a {
+	filter: progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Direction=45, Strength=2);
+	-ms-filter: progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Direction=45, Strength=2);
+}
+
+.footer__wrapper_signature_light, .footer__wrapper_signature_bold, .footer__wrapper_link, .slider__left_violet, .slider__left_white {
+filter: Shadow(Color=#000000, Direction=135, Strength=3);
+}
+
+.blurbs {
+	background: url(img/blurbs_bg.png) repeat-x;
+}
+
+.blurbs__text>a:hover {
+	filter: progid:DXImageTransform.Microsoft.Shadow(Color=#FFFFFF, Direction=135, Strength=2);
+	-ms-filter: progid:DXImageTransform.Microsoft.Shadow(Color=#FFFFFF, Direction=135, Strength=2);
+}
+
+.transparent__slider {
+	background-color: #766e7b;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=59)";     /*Прозрачный фон слайдера */
+}
+
+.slider__left_white_small, .slider__left_white, .slider__left_violet, .slider {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=589)"
+}
+
+nav {
+	width: 58%;
+	height: 100px;
+	float: right;
+}
+
+.header__container__logo {
+padding: 66px 115px 0px 0px;
+display: inline-block;
+
+}
+ul.header__container__menu {
+padding: 0px 0px 0px;
+float: right;
+/*width: 665px;*/
+display: block;
+}
+.footer {
+/*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";*/
+ filter: DropShadow(Color=#0066cc, OffX=5, OffY=-3, Positive=1);
+}
+
+
+
+@media only screen and (max-width: 960px) and (min-width: 321px), only screen and (max-device-width: 960px) and (orientation : landscape) {
+
+	nav {
+		float: none;
+		width: 100%;
+	}
+	ul.header__container__menu {
+		float: none;
+	}
+
+	.header__container__logo {
+padding: 66px 15px 0px 15px;
+display: inline-block;
+}
+
+	.transparent__slider {
+		margin: 55px 0 0 0;
+	}
+
+	.blurbs {
+	background: url(img/blurbs_bg-wide.png) repeat-x;
+}
+
+.footer__wrapper_linkgroup {
+padding: 48px 0px 0px 3%;
+width: 100%;
+}
+
+
+
+}
+
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+.transparent__slider {
+		 	 background-color: transparent; 
+		 	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=500)";     /*Прозрачный фон слайдера */
+		 	}
+.header__container__menu__link-invisible {
+					display: block;
+					padding: 40px 100px 0 0px;
+		}	
+
+		.header__container__logo {
+padding: 66px 15px 0px 15px;
+display: block;
+margin: auto;
+
+
+}

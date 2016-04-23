@@ -53,6 +53,8 @@
 .blurbs {
 	padding-top: 75px;
 	height: 265px;
+	background: -moz-linear-gradient(bottom, #36293d, #735082);
+	background: -o-linear-gradient(bottom, #36293d, #735082);
 	background: linear-gradient(to top, #36293d, #735082);
 	border-top: 1px solid #33253b;
 	border-bottom: 1px	solid #21333b;
