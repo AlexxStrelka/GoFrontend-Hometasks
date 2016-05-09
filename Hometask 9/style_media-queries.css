@@ -27,7 +27,7 @@
     	padding: 0 1.5% 5px 1.5%;
 		}
 		
-		nav {
+		.nav {
 		float: none;
 	}
 /*......................................Слайдер на прозрачном ФОНЕ..............*/
@@ -180,6 +180,12 @@
 				height: 234px;
 				}
 }
+
+@media only screen and (max-width: 760px) and (min-width: 480px), only screen and (max-device-width: 760px) and (min-device-width: 480px){
+			.main_article__right_block1, .main_article__right_block2, .main_article__right_block3 {
+				height: 65px;
+			}
+}
 /*.......................from 480 to 768 px.........................................*/
 
 
@@ -201,7 +207,7 @@
 				text-align: center;
 			}
 
-			nav {
+			.nav {
 				height: 40px;
 				width: 100%;
 				float: none;
@@ -211,6 +217,7 @@
 				float: none;
 				margin: auto;
 				padding: 0 0 0 0;
+				height: auto;
 			}
 
 			ul.header__container__menu__linkgroup{
