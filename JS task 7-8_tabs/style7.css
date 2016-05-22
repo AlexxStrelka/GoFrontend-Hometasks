@@ -1,0 +1,58 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+#tabs {
+	border: solid 2px #F0E68C;
+	display: block;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
+}
+
+.tabs__1, .tabs__2, .tabs__3 {
+	position: relative;
+	top: 2px;
+	background-color: #EEE8AA;
+}
+
+.tabsText-1, .tabsText-2, .tabsText-3 {
+background-color: #FFFACD;
+border: solid 2px #F0E68C;
+padding: 5px 5px 5px 5px;
+}
+
+
+.active {
+	background-color: #FFFACD;
+}
+.hover {
+background-color: #F0E68C;
+}
+
+
+ul {
+	padding: 0;
+	margin: 0;
+	background-color: #EEE8AA;
+}
+li {
+	list-style: none;
+	display: inline-block;
+	border: solid 2px #F0E68C;
+	border-radius: 3px;
+	border-bottom: #FFFACD;
+	height: 30px;
+	padding: 5px 5px 5px 5px;
+}
+
+li > a, li > a:hover, li > a:visited, li > a:active, li > a:link {
+	 text-decoration: none;
+	 color: black;
+	 cursor: pointer;
+}
+
+
+
+
+
