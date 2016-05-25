@@ -1,0 +1,47 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+.formContainer {
+	border: solid 1px #CAC1C1;
+	width: 800px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px 10px;
+}
+
+.formField {
+	position: relative;
+}
+
+.input-large {
+	margin-bottom: 10px;
+}
+
+label {
+    display: inline-block; 
+    width: 100px;
+  }
+
+button {
+  	margin: auto;
+}
+
+.tooltip{
+position:absolute;
+z-index:999;
+left: 310px;
+background-color:#CCFFFF;
+padding:3px;
+border:2px solid #99FFCC;
+border-radius: 7px;
+width:250px;
+top: 1px;
+}
+.tooltip p{
+margin:0;
+padding:0;
+color: black;
+padding:2px 5px 2px 8px;
+}
