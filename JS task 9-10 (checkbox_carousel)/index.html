@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hometask JS 9-10</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles10-11.css">
+    <link rel="stylesheet" type="text/css" href="styles/skin.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery.selectbox.css">
+    <link rel="stylesheet" type="text/css" href="styles/checkbox.css">
+    <link rel="stylesheet" type="text/css" href="styles/menu-style.css">
+    
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/script10-11.js"></script>
+           
+</head>
+<body>
+<div class="container">
+<header>
+<p class="title">There is always the right time to travel</p>
+<div class="carousel-wrapper">
+<div class="jcarousel">
+    <ul>
+        <li class="jcarousel__item"><img src="img/img1.jpg"></li>
+        <li class="jcarousel__item"><img src="img/img2.jpg"></li>
+        <li class="jcarousel__item"><img src="img/img3.jpg"></li>
+        <li class="jcarousel__item"><img src="img/img4.jpg"></li>
+        <li class="jcarousel__item"><img src="img/img5.jpg"></li>
+       <!--  <li class="jcarousel__item"><img src="http://placehold.it/550x250"></li> -->
+    </ul>
+    
+</div>
+<div class="jcarousel-pagination">
+<!-- Pagination items will be generated in here -->
+</div>
+<div class="navigation">
+<button><a class="jcarousel-prev" href="#">Prev</a></button>
+<button><a class="jcarousel-next" href="#">Next</a></button>
+</div>
+</div>
+<menu>
+  <ul>
+    <li class="menu-item"><a href="#">About us</a></li>
+    <li class="menu-item mainTag"><a href="#">Countries</a>
+      <ul class="dropdown">
+        <li class="dropdown__submenu tag"><a href="#">Europe</a>
+          <ul class="dropdown__submenu__block">
+            <li class="dropdown__submenu__block_item"><a href="#">France</a></li>
+            <li class="dropdown__submenu__block_item"><a href="#">Italy</a></li>
+            <li class="dropdown__submenu__block_item"><a href="#">Spain</a></li>
+          </ul>
+        </li>
+        <li class="dropdown__submenu"><a href="#">America</a></li>
+        <li class="dropdown__submenu"><a href="#">Asia</a></li>
+        <li class="dropdown__submenu tag"><a href="#">Middle East</a>
+          <ul class="dropdown__submenu__block">
+            <li class="dropdown__submenu__block_item"><a href="#">Egipt</a></li>
+            <li class="dropdown__submenu__block_item"><a href="#">Tunisia</a></li>
+            <li class="dropdown__submenu__block_item"><a href="#">Iran</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item"><a href="#">Travel options</a></li>
+    <li class="menu-item"><a href="#">Tickets</a></li>
+    <li class="menu-item"><a href="#">Contacts</a></li>
+  </ul>
+</menu>
+</header>
+<aside>
+  <div class="countrySelect">
+    <p><b>Choose a country, please</b></p>
+      <select>
+        <option >France</option>
+        <option>England</option>
+        <option>USA</option>
+        <option>Thailand</option>
+        <option>Brazil</option>
+      </select>
+  </div>
+  <div class="checkbox">
+    <p><b>How many countries have you already visited?</b></p>
+    <form action="#">
+      
+      <div class="checkbox__item"><label for="lab1">Answer 1</label><span class="niceCheck"><input type="checkbox" id="lab1" tabindex="1"></span></div>
+      <div class="checkbox__item"><label for="lab2">Answer 2</label><span class="niceCheck"><input type="checkbox" class="niceCheck" checked="checked" id="lab2" tabindex="2" value="2"></span></div>
+      <div class="checkbox__item"><label for="lab3">Answer 3</label><span class="niceCheckDisabled"><input type="checkbox" id="lab3" disabled="disabled"></span></div>
+    </form>
+    </div>
+    <div class="checkboxCss">
+    <p><b>Which type of transport do you prefer?</b></p>
+    <form action="#">
+      
+      <div class="cssCheck"><input type="checkbox" id="lab1-2"><label for="lab1-2">Airplanes</label></div>
+      <div class="cssCheck"><input type="checkbox" id="lab2-2"><label for="lab2-2">Trains</label></div>
+      <div class="cssCheck"><input type="checkbox" id="lab3-2"><label for="lab3-2">Cars</label></div>
+    </form>
+  </div>
+</aside>
+
+
+</body>
+</html>

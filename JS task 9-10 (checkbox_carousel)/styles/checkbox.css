@@ -1,0 +1,92 @@
+{
+  margin: 0;
+  padding: 0;
+}
+div.checkbox {
+	padding: 80px 5px 0 30px;
+	cursor: pointer;
+}
+div.checkbox label {
+	display: inline-block;
+	font-size: 14px;
+	color: #757a86;
+	padding: 0 10px 0 11px;
+}
+
+div.checkbox__item {
+	display: block;
+}
+
+
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/checkbox-sprite.png);
+  overflow: hidden;
+}
+
+.niceCheckDisabled {
+  width: 16px;
+  height: 16px;
+  background: url(../img/checkbox-disabled.png) no-repeat;
+  z-index: 100;
+}
+
+#lab3 {
+  z-index: 0;
+  opacity: 0;
+}
+
+.niceChecked {
+    background-position: 0 -17px;
+}
+
+.niceCheck input {
+  margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+
+
+
+/*Checkbox on CSS.............................................*/
+.checkboxCss {
+  padding: 0px 5px 5px 5px;
+  font-size: 14px;
+  color: #757a86;
+  margin-left: 30px;
+}
+
+div.cssCheck > label {
+  width: 100px;
+  display: block;
+}
+
+div.cssCheck > input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+ }
+
+div.cssCheck > label:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox-sprite.png);
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+
+div.cssCheck > input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+
+div.cssCheck > label:hover:after {
+background-position: 0 -34px;
+}
+
+div.cssCheck > input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+
+}

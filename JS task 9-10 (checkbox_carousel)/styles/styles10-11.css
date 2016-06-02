@@ -1,0 +1,105 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'ExoRegular', Georgia, sans-serif;
+}
+
+@font-face {
+    font-family: 'ExoRegular';
+    src: url('../fonts/exo-regular-webfont.eot');
+    src: url('../fonts/exo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/exo-regular-webfont.woff') format('woff'),
+         url('../fonts/exo-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+	width: 1438px;
+	height: 1600px;
+	background-color: #ecedf2;
+	margin: auto;
+	-webkit-box-shadow: 0px 3px 11px 2px rgba(73,77,89,1);
+	-moz-box-shadow: 0px 3px 11px 2px rgba(73,77,89,1);
+	box-shadow: 0px 3px 11px 2px rgba(73,77,89,1);
+}
+
+p.title {
+	font-family: 'ExoRegular', Georgia, sans-serif;
+	font-size: 40px;
+	color: #374456;
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding-top: 150px;
+}
+
+header {
+	height: 812px;
+	/*width: 1438px;*/
+	background: url("../img/background.jpg") no-repeat top center;
+}
+
+menu {
+	height: 50px;
+	margin-top: 130px;
+	background: linear-gradient(to top, #757a86 0%, #626875 36%, #4d5667 100%);
+}
+
+.menu-item {
+	list-style: none;
+	display: inline-block;
+	font-family: 'ExoRegular', Georgia, sans-serif;
+	border: solid 1px transparent;
+	font-size: 16px;
+	color: white;
+	padding: 15px 25px 16px 25px;
+}
+
+.menu-item > a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu-item:hover {
+	background-color: #757a86;
+}
+
+aside {
+	width: 400px;
+	height: 788px;
+	background-color: #c8ccd5;
+	/*border-right: solid 1px grey; */
+}
+
+p {
+	font-size: 14px;
+	color: #757a86;
+	display: block;
+	clear: both;
+}
+
+div.countrySelect {
+	padding: 5px 5px 5px 30px;
+}
+
+
+
+
+/*#test {
+
+    position: relative;
+
+    left: 0;
+
+    width: 50px;
+
+    height: 50px;
+
+    background: #000;
+
+}*/
