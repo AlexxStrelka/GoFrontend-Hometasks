@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hometask JS 11-12__Carousel Plugin</title>
+    <link rel="stylesheet" type="text/css" href="styles11-12.css">
+            
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous">
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+<script type="text/template" id="my">
+        <div class="container">
+        <header>
+         <h1><%= name %></h1>
+         <img src="img/me.jpg"> <br>
+        </header>
+        <div>
+            <%= jobTitle %>
+        </div>
+        <div>
+        <span>Хочу учить фронт-енд потому что: <br> </span>
+            <ul>
+                <li><%= reason1 %></li>
+                <li><%= reason2 %></li>
+                <li><%= reason3 %></li>
+            </ul>
+        </div>
+        <div>
+            Мой контактный телефон <br>
+            <%= phone %><br>
+            <br>
+
+            Мой профиль вконтакте <br>
+            <a href="<%= profileVK %>">vkontakte</a>
+        </div>
+        <div class="footer">
+            Мой фидбек:<br>
+            <%= feedback %>
+        </div>
+        </div>
+</script>
+</body>
+</html>
