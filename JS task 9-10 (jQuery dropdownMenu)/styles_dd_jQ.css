@@ -1,0 +1,183 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Ubuntu', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(50,50,50);;
+}
+
+/*Upper blue bar with links..............................
+*/
+div.top-bar {
+  background-color: rgb(100,150,200);
+  height: 40px;
+  line-height: 34px;
+}
+
+div.top-bar__content {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+div.top-bar__content a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 10px 5px 14px 5px;
+}
+
+.all-tabs {
+  float: left;
+  text-align: left;
+}
+.back {
+  float: right;
+  text-align: right;
+}
+
+div.top-bar__content a:hover {
+  background-color: lightblue;
+}
+
+/*Grey header part with text...................*/
+div.title {
+  background-color: rgb(50,50,50);
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+}
+
+h1 {
+font-size: 30px;
+margin: 0 auto;
+font-weight: normal;
+margin-bottom: 10px;
+}
+h2 {
+font-size: 20px;
+margin: 0;
+font-weight: normal;
+}
+
+/*Red menu bar with dropdown.........*/
+nav {
+  background-color: rgb(255,100,100);
+  color: white;
+  padding: 10px 0;
+  /*position: relative;*/
+}
+
+ul.menu {
+  list-style: none;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: block;
+  line-height: 40px;
+  padding: 0 12px;
+  margin: 0 12px;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+/*DROPDOWN SUBMENUS.....................................*/
+.dropdown {
+  background-image: url("img/arrow-down.png");
+  background-position: right 20px;
+  background-repeat: no-repeat;
+}
+.dropdown-sub {
+  background-image: url("img/arrow-right.png");
+  background-position: right 16px;
+  background-repeat: no-repeat;
+}
+
+nav li li a {
+  border-bottom: solid 1px rgb(200,50,50);
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li li {
+  width: 190px;
+}
+
+
+.submenu1, .submenu2, .submenu3 {  /*Hidden submenues....................*/
+  display: block;
+  opacity: 1;
+  /*height: 206px;*/
+  /*overflow: hidden;*/
+  padding: 0 0;
+  background-color: #ff6464;
+  position: absolute;
+  width: 200px;
+  margin: 0;
+  display: none;
+}
+
+.submenu1 {
+  left: 0;
+  top: 40px;
+}
+
+.submenu2 {
+  top: 0;
+  left: 200px;
+}
+
+.submenu3 {
+  top: 0;
+  left: 200px;
+}
+
+ul.colorSub li {
+  background-color: #ff6464;
+  width: 200px;
+
+}
+
+/*Main article..................*/
+article {
+  background-color: white;
+  padding: 30px 0;
+}
+.article__content {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
+
+
+
