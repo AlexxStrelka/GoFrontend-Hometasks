@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hometask JS 13-14 test validation </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script3.js"></script>
+    <script type="text/javascript" src="js/script_pageRender.js"></script>
+    <script src="js/template.js"></script>
+           
+</head>
+<body>
+
+
+<div id="basicModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Результаты теста</h4>
+      </div>
+      <div class="modal-body">
+        <p class="testResults"> <!--Тут будут результаты теста --> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/template" id="testId">
+		<div class="container">
+			<div class="wrapper">
+			<h3>Тест по программированию</h3>
+					<ol>
+						<li><span><%= question1 %></span>
+								<form class="formClass" action="#">
+									<input class="inputClass" type="checkbox" name="" id="var1-1">			
+									<label for="var1-1"><%= answer1_1 %></label>
+									<input class="inputClass" type="checkbox" name="" id="var1-2">			
+									<label for="var1-2"><%= answer1_2 %></label>
+									<input class="inputClass" type="checkbox" name="" id="var1-3">			
+									<label for="var1-3"><%= answer1_3_correct %></label>			
+								</form>
+						</li>
+
+						<li><span><%= question2 %></span>
+								<form class="formClass" action="#">
+									<input class="inputClass" type="checkbox" name="" id="var2-1">			
+									<label for="var2-1"><%= answer2_1_correct %></label>	
+									<input class="inputClass" type="checkbox" name="" id="var2-2">			
+									<label for="var2-2"><%= answer2_2 %></label>
+									<input class="inputClass" type="checkbox" name="" id="var2-3">			
+									<label for="var2-3"><%= answer2_3 %></label>		
+								</form>
+						</li>
+
+						<li><span><%= question3 %></span>
+								<form class="formClass" action="#">
+									<input class="inputClass" type="checkbox" name="" id="var3-1">			
+									<label for="var3-1"><%= answer3_1_correct %></label>	
+									<input class="inputClass" type="checkbox" name="" id="var3-2">			
+									<label for="var3-2"><%= answer3_2 %></label>
+									<input class="inputClass" type="checkbox" name="" id="var3-3">			
+									<label for="var3-3"><%= answer3_3 %></label>		
+								</form>
+						</li>
+						
+					</ol>
+			<div class="button">
+			<button class="btn btn-default" type="submit">
+			Проверить мои результаты
+			</button>
+			</div>
+			</div>
+		</div>
+</script>
+</body>
+</html>
