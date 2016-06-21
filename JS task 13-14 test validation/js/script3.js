@@ -63,37 +63,54 @@ function testPreCheck(e) {
         }
 }
 
+
 //Функция проверяет введенные ответы и сравнивает их справильными из объекта correct
 function testCheck(e) {
   
   var $forms = $(".inputClass:checked + label");
-  
+  var arr = [];// Массив для ответов
   var error = false;
   var correctAnswer = 0;
+
 
         $forms.each (function (i) {
 
           if ($($forms[i]).text() == correct[i]) {
             
             correctAnswer = correctAnswer+1;
+            arr.push($($forms[i]).text());
             
           } else {
 
             error = true;
+            arr.push($($forms[i]).text());
             
           }
          
       });
 
-      modalOn(correctAnswer, error);
+      modalOn(correctAnswer, error, arr);
 }
 
 //Функция выводит модальное окно с результатами теста
-function modalOn(correctAnswer, error) {
-  
-      if (error == true) {
+function modalOn(correctAnswer, error, arr) {
+      
 
-          $("div.modal-body p.testResults").html("Тест не пройден. Вы дали "+correctAnswer+" правильный(ых) ответ(а). Попробуйте еще раз!");
+      if (error == true) {
+          var feedback = "Тест не пройден! Результаты теста:<br>";
+
+      for(var i = 0; i < arr.length; i++){
+          var num = i+1;
+
+          feedback = feedback + "<br>    Вопрос №" + num + "";
+              if(arr[i] != correct[i]){
+                  feedback = feedback + "<br>    Правильный ответ: " + correct[i] + "<br>";
+                } else 
+                  feedback = feedback+": Верно! <br>";
+                  
+              } 
+
+          $("div.modal-body p.testResults").html(feedback + "<br>Вы дали "+correctAnswer+" правильный(ых) ответ(а). Попробуйте еще раз!");
 
       } else {
         
@@ -103,10 +120,15 @@ function modalOn(correctAnswer, error) {
 
     //Вызываем модальное окно с результатами
     $("#basicModal").modal('show');
+    console.log("array", arr);
 
     //По нажатию на кнопку Close снимаем все флажки
     $("button[data-dismiss=modal]").click(function (){
         $("input[type=checkbox]").removeAttr('checked');
+        var i = 0;
+        var arr = []; //Обнуляем массив для ответов
+        return arr;
+        console.log("array", arr);
     });
 }
 
