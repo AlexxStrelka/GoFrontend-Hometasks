@@ -1,0 +1,57 @@
+{
+margin: 0;
+padding: 0;
+}
+
+body {
+	background-color: lihtyellow;
+}
+
+.container {
+	margin: auto;
+	text-align: center;
+	width: 800px;
+	height: 400px;
+}
+
+form.searchField {
+	
+	text-align: center;
+}
+
+img {
+	margin:auto;
+	display: block;
+	width: 400px;
+}
+
+button {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	background-color:  #F0F0F0;
+	border-radius: 1px;
+	border: none;
+	height: 22px;
+}
+
+button:hover {
+border: solid 1px #A9A9A9;
+}
+
+
+#result {
+	padding-top: 20px;
+	height: 600px;
+	width: 600px;
+	margin: auto;
+
+}
+
+
+
+a {
+	color: black;
+	font-weight: bold;
+	font-family: Arial;
+}
