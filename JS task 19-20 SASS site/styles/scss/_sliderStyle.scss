@@ -1,0 +1,46 @@
+$image-height: 470px;
+$image-width: 1160px;
+
+.header_wrapper_container_slider {
+	 z-index: 9;
+	 width: $image-width;
+	 height: $image-height;
+	 overflow: hidden;
+	 margin: 0 0 7px;
+	 position: relative;
+ 
+			 & ul, li {
+					 padding: 0;
+					 margin: 0;
+					 list-style: none;
+			 }
+			 & ul {
+			 		width: 9999px; 
+			 }
+			 & ul li {
+					 list-style: none;
+					 float: left;
+					 width: $image-width;
+		 			 height: $image-height;
+			 }
+			 & .nav {
+					 position: absolute;
+					 left: 555px;
+					 bottom: 12px; 
+			 }
+			 & .nav span {
+					 opacity: 0.9;
+					 background: url(../../img/slider-indicator.png) no-repeat 0px -18px;
+					 margin: 0 8px 0 0;
+					 width: 15px;
+					 height: 15px;
+					 cursor: pointer;
+					 overflow: hidden;
+					 display: block;
+					 float: left;
+			 }
+			 & .nav span.on {
+			 		background: url(../../img/slider-indicator.png) no-repeat 0px 0px;
+			 }
+
+}

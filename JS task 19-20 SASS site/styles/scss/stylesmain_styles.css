@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header_wrapper_container_slider {
+  z-index: 9;
+  width: 1160px;
+  height: 470px;
+  overflow: hidden;
+  margin: 0 0 7px;
+  position: relative; }
+  .header_wrapper_container_slider ul, .header_wrapper_container_slider li {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .header_wrapper_container_slider ul {
+    width: 9999px; }
+  .header_wrapper_container_slider ul li {
+    list-style: none;
+    float: left;
+    width: 1160px;
+    height: 470px; }
+  .header_wrapper_container_slider .nav {
+    position: absolute;
+    left: 555px;
+    bottom: 12px; }
+  .header_wrapper_container_slider .nav span {
+    opacity: 0.9;
+    background: url(../../img/slider-indicator.png) no-repeat 0px -18px;
+    margin: 0 8px 0 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    float: left; }
+  .header_wrapper_container_slider .nav span.on {
+    background: url(../../img/slider-indicator.png) no-repeat 0px 0px; }
+
+body {
+  width: 100%;
+  height: 2677px; }
+
+.header_wrapper {
+  background-color: white;
+  width: 100%;
+  height: 1013px; }
+
+.service_wrapper {
+  background-color: #2a2d32;
+  width: 100%;
+  height: 498px; }
+
+.news_wrapper {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 546px; }
+
+.logo_wrapper {
+  background-color: white;
+  width: 100%;
+  height: 242px; }
+
+.footer_wrapper {
+  background-color: #2a2d32;
+  width: 100%;
+  height: 321px; }
+
+.contacts_wrapper {
+  background-color: #35383c;
+  width: 100%;
+  height: 60px; }
+
+.header_wrapper {
+  width: 1240px;
+  margin: auto; }
+
+.header_wrapper_container_logo {
+  height: 109px;
+  width: 1200px; }
+  .header_wrapper_container_logo #logo {
+    display: block;
+    float: left;
+    padding: 34px 0px 0px 0px; }
+  .header_wrapper_container_logo span {
+    display: block;
+    float: right;
+    padding: 44px 40px 0px 0px; }
+    .header_wrapper_container_logo span .icon, .header_wrapper_container_logo span .icon-facebook, .header_wrapper_container_logo span .icon-twitter, .header_wrapper_container_logo span .icon-rss, .header_wrapper_container_logo span .icon-linkedIn, .header_wrapper_container_logo span .icon-skype {
+      display: inline-block;
+      height: 20px;
+      width: 20px; }
+    .header_wrapper_container_logo span .icon-facebook {
+      background: url(../../img/icons/facebook.png); }
+    .header_wrapper_container_logo span .icon-twitter {
+      background: url(../../img/icons/twitter.png); }
+    .header_wrapper_container_logo span .icon-rss {
+      background: url(../../img/icons/rss.png); }
+    .header_wrapper_container_logo span .icon-linkedIn {
+      background: url(../../img/icons/linkedIn.png); }
+    .header_wrapper_container_logo span .icon-skype {
+      background: url(../../img/icons/skype.png); }
+    .header_wrapper_container_logo span .icon:hover, .header_wrapper_container_logo span .icon-facebook:hover, .header_wrapper_container_logo span .icon-twitter:hover, .header_wrapper_container_logo span .icon-rss:hover, .header_wrapper_container_logo span .icon-linkedIn:hover, .header_wrapper_container_logo span .icon-skype:hover {
+      background-position: 0 20px; }
+
+nav {
+  height: 55px;
+  width: 1160px;
+  background-color: #2a2d32; }
+  nav .header_wrapper_container_menu {
+    display: block;
+    float: left;
+    height: 100%;
+    padding: 0px 0px 0px 0px; }
+    nav .header_wrapper_container_menu a {
+      text-decoration: none;
+      coursor: pointer;
+      color: white;
+      height: 36px;
+      font-family: "Ubuntu Condensed", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      display: inline-block;
+      padding: 19px 38px 0px 38px;
+      border-right: solid 1px black; }
+      nav .header_wrapper_container_menu a:hover {
+        color: #f4b60d; }
+      nav .header_wrapper_container_menu a.menu-blue {
+        background-color: #248cec; }
+  nav .header_wrapper_container_search input {
+    outline: none;
+    padding-left: 15px;
+    width: 238px;
+    height: 38px;
+    border: solid 1px black;
+    display: block;
+    float: right;
+    margin: 8px 8px 0 8px;
+    color: #5d6063;
+    background-color: #35383c;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 14px;
+    background-image: url(../../img/icons/search.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%; }
+
+.header_wrapper_container_slider {
+  margin-top: 40px; }
+
+.header_wrapper_container_info {
+  padding-top: 67px; }
+  .header_wrapper_container_info #block1, .header_wrapper_container_info #block2, .header_wrapper_container_info #block3 {
+    display: inline-block; }
+  .header_wrapper_container_info .header_wrapper_container_info_num {
+    width: 120px;
+    line-height: 65px;
+    vertical-align: top;
+    display: inline-block;
+    color: #e9e9ea;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif; }
+  .header_wrapper_container_info .header_wrapper_container_info_text {
+    width: 255px;
+    display: inline-block; }
+    .header_wrapper_container_info .header_wrapper_container_info_text h1 {
+      color: black;
+      padding: 10px 0 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Ubuntu", sans-serif; }
+    .header_wrapper_container_info .header_wrapper_container_info_text p {
+      color: #8a8a8a;
+      font-family: Arial;
+      font-weight: normal;
+      font-size: 13px; }
+    .header_wrapper_container_info .header_wrapper_container_info_text a {
+      text-decoration: none;
+      display: inline-block;
+      width: 100px;
+      coursor: pointer;
+      color: black;
+      font-size: 13px;
+      font-weight: bold;
+      font-family: "Ubuntu", sans-serif;
+      background: url(../../img/icons/arrow.png) no-repeat 73px 4px; }
+      .header_wrapper_container_info .header_wrapper_container_info_text a:hover {
+        color: #248cec;
+        background: url(../../img/icons/arrow.png) no-repeat 73px -9px; }
+
+.service_wrapper h1 {
+  padding: 45px 0 55px 234px;
+  color: white;
+  font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold; }
+.service_wrapper .service_wrapper_links {
+  margin: auto;
+  width: 1235px; }
+  .service_wrapper .service_wrapper_links a {
+    text-decoration: none;
+    coursor: pointer;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0 40px 0px 0; }
+    .service_wrapper .service_wrapper_links a h2 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 16px;
+      font-weight: bold; }
+    .service_wrapper .service_wrapper_links a:hover {
+      color: #be9117; }
+    .service_wrapper .service_wrapper_links a img.hide {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .service_wrapper .service_wrapper_links a:hover img.hide {
+      display: block; }
+  .service_wrapper .service_wrapper_links h2 {
+    margin-top: 30px;
+    text-align: center; }
+
+.news_wrapper {
+  margin: auto;
+  width: 1200px;
+  margin-top: 53px; }
+  .news_wrapper .news_wrapper_content {
+    display: inline-block;
+    width: 560px; }
+    .news_wrapper .news_wrapper_content h1 {
+      color: black;
+      padding: 10px 0 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Ubuntu", sans-serif; }
+    .news_wrapper .news_wrapper_content .news_wrapper_content_news {
+      display: block;
+      margin-bottom: 28px; }
+      .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-img {
+        position: relative;
+        display: inline-block; }
+        .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-img img {
+          padding: 0 0 0 20px; }
+        .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-img #month {
+          color: white;
+          font-size: 15px;
+          font-weight: bold;
+          font-family: "Ubuntu", sans-serif;
+          background-color: #248cec;
+          height: 30px;
+          width: 39px;
+          padding-top: 9px;
+          position: absolute;
+          top: 20px;
+          left: -5px;
+          text-align: center; }
+        .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-img #date {
+          background-color: #f4b60d;
+          font-size: 18px;
+          font-weight: bold;
+          font-family: "Ubuntu", sans-serif;
+          height: 30px;
+          width: 39px;
+          padding-top: 9px;
+          position: absolute;
+          top: 58px;
+          left: -5px;
+          text-align: center; }
+      .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-article {
+        display: inline-block;
+        width: 330px;
+        vertical-align: top;
+        padding: 0 0 0 30px; }
+        .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-article a {
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+          font-weight: bold;
+          font-family: "Ubuntu", sans-serif; }
+          .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-article a:hover {
+            color: #248cec; }
+        .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-article #grey {
+          padding-top: 15px;
+          color: #9e9e9e;
+          font-size: 13px;
+          font-weight: normal;
+          font-family: Arial; }
+          .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-article #grey a {
+            color: #248cec;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: normal;
+            font-family: Arial; }
+        .news_wrapper .news_wrapper_content .news_wrapper_content_news .news_wrapper_content_news-article p {
+          padding-top: 34px;
+          color: #8a8a8a;
+          font-family: Arial;
+          font-weight: normal;
+          font-size: 13px; }
+  .news_wrapper .news_wrapper_bannerplace {
+    width: 550px;
+    height: 418px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 35px; }
+    .news_wrapper .news_wrapper_bannerplace h1 {
+      color: black;
+      padding: 10px 0 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Ubuntu", sans-serif; }
+    .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .hidden {
+      list-style: none; }
+      .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .hidden span {
+        background-color: white;
+        border: solid 1px #e8e8e8;
+        display: block;
+        height: 38px;
+        margin-bottom: 5px; }
+      .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .hidden a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        padding: 12px 0px 0 11px;
+        color: black;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: "Ubuntu", sans-serif; }
+      .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .hidden #icon-h {
+        display: block;
+        float: left;
+        background: url(../../img/minus-greyup.png) no-repeat center center;
+        width: 39px;
+        border: none;
+        border-right: solid 1px #e8e8e8; }
+    .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .active {
+      list-style: none; }
+      .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .active span {
+        background-color: #f4b60d;
+        border: solid 1px white;
+        display: block;
+        height: 38px;
+        margin-bottom: 5px; }
+      .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .active a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        padding: 12px 0px 0 11px;
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: "Ubuntu", sans-serif; }
+      .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .active #icon-a {
+        display: block;
+        float: left;
+        background: url(../../img/minus-white.png) no-repeat center center;
+        width: 39px;
+        border: none;
+        border-right: solid 1px white; }
+    .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .accordion_panel_text {
+      list-style: none;
+      color: #8a8a8a;
+      font-family: Arial;
+      font-weight: normal;
+      font-size: 13px; }
+      .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .accordion_panel_text.hide {
+        display: none; }
+      .news_wrapper .news_wrapper_bannerplace .news_wrapper_bannerplace_accordion .accordion_panel .accordion_panel_text p {
+        padding: 14px 0px 40px 35px; }
+
+.logo_wrapper .logo_wrapper_container {
+  width: 1240px;
+  margin: auto; }
+  .logo_wrapper .logo_wrapper_container img {
+    padding: 80px 20px 0 20px; }
+
+.footer_wrapper .footer_wrapper_container {
+  width: 1240px;
+  margin: auto; }
+  .footer_wrapper .footer_wrapper_container .footer_wrapper_linkgroup {
+    width: 21%;
+    padding-right: 36px;
+    padding-top: 60px;
+    display: inline-block;
+    list-style: none;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: bold; }
+    .footer_wrapper .footer_wrapper_container .footer_wrapper_linkgroup li {
+      height: 28px;
+      border-bottom: solid 1px #393c40;
+      padding-top: 8px; }
+    .footer_wrapper .footer_wrapper_container .footer_wrapper_linkgroup a {
+      text-decoration: none;
+      coursor: pointer;
+      color: #828385;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: normal; }
+      .footer_wrapper .footer_wrapper_container .footer_wrapper_linkgroup a:hover {
+        color: #248cec; }
+
+.contacts_wrapper_container {
+  width: 1240px;
+  margin: auto; }
+  .contacts_wrapper_container span {
+    color: #5d6063;
+    display: inline-block;
+    padding: 10px 30px 0 05px;
+    font-size: 12px;
+    font-family: Arial, sans-serif; }
+    .contacts_wrapper_container span.contacts_wrapper_container_copyright {
+      float: right;
+      padding-top: 21px; }
+  .contacts_wrapper_container img {
+    padding: 18px 0 0 5px; }
+
+/*# sourceMappingURL=stylesmain_styles.css.map */
