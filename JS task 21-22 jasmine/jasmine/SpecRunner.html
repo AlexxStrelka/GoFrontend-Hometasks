@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.4.1</title>
+
+  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous">
+    </script>
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.4.1/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine-2.4.1/jasmine.css">
+
+  
+  <script src="lib/jasmine-2.4.1/jasmine.js"></script>
+  <script src="lib/jasmine-2.4.1/jasmine-html.js"></script>
+  <script src="lib/jasmine-2.4.1/boot.js"></script>
+  <script src="lib/jasmine-2.4.1/jasmine-jquery.js"></script>
+
+
+  <!-- include source files here... -->
+  <script src="src/modalOn.js"></script>
+  <script src="src/preCheck.js"></script>
+  <script src="src/testCheck.js"></script>
+
+  <!-- include spec files here... -->
+  <script src="spec/modalOn_spec.js"></script>
+  <script src="spec/preCheck_spec.js"></script>
+  <script src="spec/testCheck_spec.js"></script>
+
+</head>
+
+<body>
+<div id="my-fixture">
+        <ol>
+            <li><span>Вопрос 1</span>
+                <form class="formClass" action="#">
+                  <input class="inputClass" type="checkbox" name="" id="var1-1" checked>      
+                  <label for="var1-1">1</label>
+                  <input class="inputClass" type="checkbox" name="" id="var1-2">      
+                  <label for="var1-2">2</label>
+                  <input class="inputClass" type="checkbox" name="" id="var1-3">      
+                  <label for="var1-3">3</label>     
+                </form>
+            </li>
+
+            <li><span>Вопрос 2</span>
+                <form class="formClass" action="#">
+                  <input class="inputClass" type="checkbox" name="" id="var1-1">      
+                  <label for="var1-1">4</label>
+                  <input class="inputClass" type="checkbox" name="" id="var1-2" checked>      
+                  <label for="var1-2">5</label>
+                  <input class="inputClass" type="checkbox" name="" id="var1-3">      
+                  <label for="var1-3">6</label>     
+                </form>
+            </li>
+
+            <li><span>Вопрос 3</span>
+                <form class="formClass" action="#">
+                  <input class="inputClass" type="checkbox" name="" id="var1-1">      
+                  <label for="var1-1">7</label>
+                  <input class="inputClass" type="checkbox" name="" id="var1-2" checked>      
+                  <label for="var1-2">8</label>
+                  <input class="inputClass" type="checkbox" name="" id="var1-3">      
+                  <label for="var1-3">9</label>     
+                </form>
+            </li>
+            
+          </ol>
+      
+      </div>
+</body>
+</html>

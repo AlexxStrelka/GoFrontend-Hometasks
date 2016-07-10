@@ -1,0 +1,46 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 600px;
+  display: block;
+  margin: auto;
+	border: solid 1px lightgrey;
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	
+
+}
+
+h3 {
+	text-align: center;
+}
+
+ol {
+	margin-bottom: 30px;
+}
+
+ol li {
+	margin-bottom: 20px;
+}
+
+input {
+	display: block;
+  float: left;
+}
+
+label {
+	display: block;
+  margin-left: 20px; 
+  font-weight: normal;
+ }
+
+ .button {
+ 	display: block;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+ }
