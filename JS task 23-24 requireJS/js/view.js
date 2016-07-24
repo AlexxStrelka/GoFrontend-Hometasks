@@ -40,12 +40,13 @@ define(
                     editable.blur();
                     $(editable[index]).html("<form><input type=\"text\" class=\"editBox\" placeholder=\"" + oldText + "\" />   <button class=\"editBtn\">Edit</button></form>");
                     
-                    $(".editBtn").on("click", function() {
+                    $(".editBtn").on("click", function(e) {
+                            e.preventDefault();
                             var newText = $('.editBox').val();
-                            alert(newText);
-                            console.log("item=", item);
-
-                        model.replaceItem(oldText, newText);
+                            console.log("newText", newText);
+                            
+                            model.replaceItem(oldText, newText);
+                            self.renderList(model.data);
                     });
             };
 

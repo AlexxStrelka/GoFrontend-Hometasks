@@ -35,10 +35,10 @@ function Model() {
 			};
       
       self.data[index] = replacement;
-      console.log(self.data); //Видно, что в массив измененное значение записывается, но почему-то потом на странице остаются только значения, 
-      //которые были изначально при загрузке страницы
-      debugger;
-				return self.data;
+      console.log(self.data); 
+      //debugger;
+			return self.data;
+
 		};
 };
 

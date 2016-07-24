@@ -15,7 +15,7 @@ $('#btn').click(function(e){
 console.log( "value1= ", $searchInput );
 
 	//Добавляем ключевое слово поиска к URL запроса
-    var urlik = "https://api.riffsy.com/v1/search?key=LIVDSRZULELA&tag="+ $searchInput + "&limit=10";
+    var urlik = "http://api.riffsy.com/v1/search?key=LIVDSRZULELA&tag="+ $searchInput + "&limit=10";
 
     console.log("URL = ", urlik);
 

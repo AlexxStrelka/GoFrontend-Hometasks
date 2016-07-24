@@ -8,7 +8,7 @@ define(
 			function Controller(model, view) {
 				var self = this;
 
-				view.elements.addBtn.on("click", addItem); //click on button to add item
+				view.elements.addBtn.on("click"||, addItem); //click on button to add item
 				view.elements.listContainer.on("click", '.item-delete', removeItem);//click to delete
 				view.elements.listContainer.on("dblclick", '.edit', editItem); //double-click to edit
 
